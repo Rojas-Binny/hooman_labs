@@ -1,0 +1,6881 @@
+[
+  {
+    "id": "conv_1",
+    "agent": "agent_4",
+    "startTime": 1743243408207,
+    "duration": 180,
+    "cost": 5.85,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+11875266823",
+      "callee": "+14129695709",
+      "type": "outbound",
+      "stats": {"llmLatency": 754, "ttsLatency": 802, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_2",
+    "agent": "agent_1",
+    "startTime": 1745762040243,
+    "duration": 474,
+    "cost": 2,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+14449178731",
+      "callee": "+14682126047",
+      "type": "outbound",
+      "stats": {"llmLatency": 273, "ttsLatency": 963, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_3",
+    "agent": "agent_2",
+    "startTime": 1744583368076,
+    "duration": 162,
+    "cost": 7.92,
+    "status": "success",
+    "callInfo": {
+      "caller": "+11020776328",
+      "callee": "+19283744119",
+      "type": "inbound",
+      "stats": {"llmLatency": 555, "ttsLatency": 870, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_4",
+    "agent": "agent_2",
+    "startTime": 1744758229773,
+    "duration": 588,
+    "cost": 3.6,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+14967495511",
+      "callee": "+13559767665",
+      "type": "inbound",
+      "stats": {"llmLatency": 692, "ttsLatency": 531, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_5",
+    "agent": "agent_3",
+    "startTime": 1744831623979,
+    "duration": 0,
+    "cost": 7.18,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+19392915599",
+      "callee": "+17862464598",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_6",
+    "agent": "agent_4",
+    "startTime": 1743686391194,
+    "duration": 0,
+    "cost": 0.14,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+11043777027",
+      "callee": "+17469065668",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_7",
+    "agent": "agent_4",
+    "startTime": 1745067166234,
+    "duration": 0,
+    "cost": 0.44,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+19610540917",
+      "callee": "+16304986083",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_8",
+    "agent": "agent_3",
+    "startTime": 1744232664767,
+    "duration": 177,
+    "cost": 4.84,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+16398227410",
+      "callee": "+11379129073",
+      "type": "inbound",
+      "stats": {"llmLatency": 91, "ttsLatency": 376, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_9",
+    "agent": "agent_5",
+    "startTime": 1744819986772,
+    "duration": 259,
+    "cost": 7.08,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+11682942723",
+      "callee": "+11869141663",
+      "type": "outbound",
+      "stats": {"llmLatency": 491, "ttsLatency": 285, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_10",
+    "agent": "agent_5",
+    "startTime": 1743743861658,
+    "duration": 542,
+    "cost": 7.45,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+18208901914",
+      "callee": "+13903616925",
+      "type": "inbound",
+      "stats": {"llmLatency": 162, "ttsLatency": 758, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_11",
+    "agent": "agent_4",
+    "startTime": 1743273171506,
+    "duration": 345,
+    "cost": 7.94,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+13442739264",
+      "callee": "+13266193896",
+      "type": "inbound",
+      "stats": {"llmLatency": 593, "ttsLatency": 163, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_12",
+    "agent": "agent_3",
+    "startTime": 1744774934675,
+    "duration": 416,
+    "cost": 2.56,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+11252489121",
+      "callee": "+16020401708",
+      "type": "outbound",
+      "stats": {"llmLatency": 600, "ttsLatency": 642, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_13",
+    "agent": "agent_1",
+    "startTime": 1745125826863,
+    "duration": 380,
+    "cost": 0.69,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+17497757773",
+      "callee": "+18649215337",
+      "type": "inbound",
+      "stats": {"llmLatency": 590, "ttsLatency": 391, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_14",
+    "agent": "agent_1",
+    "startTime": 1745742658651,
+    "duration": 142,
+    "cost": 6.3,
+    "status": "success",
+    "callInfo": {
+      "caller": "+11119078883",
+      "callee": "+17319492653",
+      "type": "inbound",
+      "stats": {"llmLatency": 656, "ttsLatency": 807, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_15",
+    "agent": "agent_5",
+    "startTime": 1743295150531,
+    "duration": 423,
+    "cost": 1.69,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+18533238616",
+      "callee": "+13401657165",
+      "type": "inbound",
+      "stats": {"llmLatency": 942, "ttsLatency": 681, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_16",
+    "agent": "agent_3",
+    "startTime": 1743320698559,
+    "duration": 0,
+    "cost": 3.2,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+18852324269",
+      "callee": "+13270120648",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_17",
+    "agent": "agent_1",
+    "startTime": 1743518357071,
+    "duration": 0,
+    "cost": 6.68,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+16087727994",
+      "callee": "+16440860586",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_18",
+    "agent": "agent_3",
+    "startTime": 1743489651066,
+    "duration": 358,
+    "cost": 9.06,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+18366523599",
+      "callee": "+12649376256",
+      "type": "inbound",
+      "stats": {"llmLatency": 685, "ttsLatency": 599, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_19",
+    "agent": "agent_5",
+    "startTime": 1744677403501,
+    "duration": 209,
+    "cost": 9.37,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+18835844449",
+      "callee": "+13926525408",
+      "type": "outbound",
+      "stats": {"llmLatency": 455, "ttsLatency": 743, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_20",
+    "agent": "agent_5",
+    "startTime": 1745462211332,
+    "duration": 533,
+    "cost": 3.27,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+11847757931",
+      "callee": "+17240746115",
+      "type": "inbound",
+      "stats": {"llmLatency": 167, "ttsLatency": 335, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_21",
+    "agent": "agent_2",
+    "startTime": 1745111169360,
+    "duration": 88,
+    "cost": 5.75,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+12095071468",
+      "callee": "+15821490667",
+      "type": "outbound",
+      "stats": {"llmLatency": 596, "ttsLatency": 273, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_22",
+    "agent": "agent_3",
+    "startTime": 1744536163743,
+    "duration": 463,
+    "cost": 4.71,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+12257340834",
+      "callee": "+12729367583",
+      "type": "inbound",
+      "stats": {"llmLatency": 972, "ttsLatency": 17, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_23",
+    "agent": "agent_1",
+    "startTime": 1743331919728,
+    "duration": 432,
+    "cost": 8.25,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+12781335829",
+      "callee": "+19754908427",
+      "type": "inbound",
+      "stats": {"llmLatency": 979, "ttsLatency": 640, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_24",
+    "agent": "agent_5",
+    "startTime": 1745372898387,
+    "duration": 354,
+    "cost": 0.68,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+17722524791",
+      "callee": "+12239371057",
+      "type": "outbound",
+      "stats": {"llmLatency": 803, "ttsLatency": 634, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_25",
+    "agent": "agent_3",
+    "startTime": 1743732723253,
+    "duration": 245,
+    "cost": 2,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+16582612302",
+      "callee": "+14207400521",
+      "type": "inbound",
+      "stats": {"llmLatency": 135, "ttsLatency": 1, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_26",
+    "agent": "agent_4",
+    "startTime": 1743385792908,
+    "duration": 232,
+    "cost": 3.58,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+11159589315",
+      "callee": "+13366438030",
+      "type": "inbound",
+      "stats": {"llmLatency": 78, "ttsLatency": 772, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_27",
+    "agent": "agent_1",
+    "startTime": 1744253343260,
+    "duration": 217,
+    "cost": 5.44,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+16965709707",
+      "callee": "+12228478551",
+      "type": "inbound",
+      "stats": {"llmLatency": 269, "ttsLatency": 721, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_28",
+    "agent": "agent_4",
+    "startTime": 1745376482891,
+    "duration": 0,
+    "cost": 7.04,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+18773835051",
+      "callee": "+12046345246",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_29",
+    "agent": "agent_2",
+    "startTime": 1745285160246,
+    "duration": 0,
+    "cost": 5.88,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+13662093255",
+      "callee": "+12789225391",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_30",
+    "agent": "agent_2",
+    "startTime": 1743460536795,
+    "duration": 565,
+    "cost": 0.62,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+16065980901",
+      "callee": "+19740672664",
+      "type": "outbound",
+      "stats": {"llmLatency": 886, "ttsLatency": 146, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_31",
+    "agent": "agent_2",
+    "startTime": 1744268374880,
+    "duration": 437,
+    "cost": 4.16,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+19012245683",
+      "callee": "+11744836151",
+      "type": "outbound",
+      "stats": {"llmLatency": 677, "ttsLatency": 598, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_32",
+    "agent": "agent_3",
+    "startTime": 1744060208314,
+    "duration": 406,
+    "cost": 6.54,
+    "status": "success",
+    "callInfo": {
+      "caller": "+12347865995",
+      "callee": "+11172164047",
+      "type": "outbound",
+      "stats": {"llmLatency": 787, "ttsLatency": 180, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_33",
+    "agent": "agent_1",
+    "startTime": 1743714499091,
+    "duration": 444,
+    "cost": 5.99,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+18976614690",
+      "callee": "+13329215531",
+      "type": "inbound",
+      "stats": {"llmLatency": 103, "ttsLatency": 921, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_34",
+    "agent": "agent_5",
+    "startTime": 1745366591917,
+    "duration": 359,
+    "cost": 9.13,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+11952081610",
+      "callee": "+12044719268",
+      "type": "outbound",
+      "stats": {"llmLatency": 488, "ttsLatency": 486, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_35",
+    "agent": "agent_5",
+    "startTime": 1744568498944,
+    "duration": 560,
+    "cost": 6.37,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+17700737425",
+      "callee": "+19706341188",
+      "type": "inbound",
+      "stats": {"llmLatency": 482, "ttsLatency": 935, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_36",
+    "agent": "agent_3",
+    "startTime": 1744539616471,
+    "duration": 409,
+    "cost": 2.26,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+19486444290",
+      "callee": "+15461916614",
+      "type": "outbound",
+      "stats": {"llmLatency": 564, "ttsLatency": 915, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_37",
+    "agent": "agent_2",
+    "startTime": 1743881389356,
+    "duration": 586,
+    "cost": 2.12,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+17722206348",
+      "callee": "+11033309320",
+      "type": "outbound",
+      "stats": {"llmLatency": 983, "ttsLatency": 392, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_38",
+    "agent": "agent_5",
+    "startTime": 1744476531562,
+    "duration": 0,
+    "cost": 7.3,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+19570955373",
+      "callee": "+12843682337",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_39",
+    "agent": "agent_5",
+    "startTime": 1745424044809,
+    "duration": 280,
+    "cost": 2.8,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+18692889733",
+      "callee": "+11860020837",
+      "type": "inbound",
+      "stats": {"llmLatency": 440, "ttsLatency": 657, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_40",
+    "agent": "agent_5",
+    "startTime": 1744239407781,
+    "duration": 184,
+    "cost": 1.22,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+16118292947",
+      "callee": "+13736822826",
+      "type": "outbound",
+      "stats": {"llmLatency": 170, "ttsLatency": 803, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_41",
+    "agent": "agent_4",
+    "startTime": 1744627994769,
+    "duration": 528,
+    "cost": 6.3,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+15532298900",
+      "callee": "+13439081137",
+      "type": "inbound",
+      "stats": {"llmLatency": 395, "ttsLatency": 605, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_42",
+    "agent": "agent_1",
+    "startTime": 1744972867871,
+    "duration": 334,
+    "cost": 8.17,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+12280641605",
+      "callee": "+16843536010",
+      "type": "inbound",
+      "stats": {"llmLatency": 229, "ttsLatency": 782, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_43",
+    "agent": "agent_1",
+    "startTime": 1745612278173,
+    "duration": 249,
+    "cost": 3.74,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+12962076708",
+      "callee": "+13170654179",
+      "type": "inbound",
+      "stats": {"llmLatency": 766, "ttsLatency": 43, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_44",
+    "agent": "agent_3",
+    "startTime": 1744491520839,
+    "duration": 466,
+    "cost": 9.68,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+12270093627",
+      "callee": "+11465014437",
+      "type": "outbound",
+      "stats": {"llmLatency": 150, "ttsLatency": 953, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_45",
+    "agent": "agent_3",
+    "startTime": 1745277177588,
+    "duration": 502,
+    "cost": 9.64,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+14588478377",
+      "callee": "+15297144443",
+      "type": "inbound",
+      "stats": {"llmLatency": 981, "ttsLatency": 712, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_46",
+    "agent": "agent_5",
+    "startTime": 1744877471427,
+    "duration": 446,
+    "cost": 2.27,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+12528565879",
+      "callee": "+19811020035",
+      "type": "outbound",
+      "stats": {"llmLatency": 422, "ttsLatency": 344, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_47",
+    "agent": "agent_3",
+    "startTime": 1744547272615,
+    "duration": 0,
+    "cost": 2.39,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+13438701283",
+      "callee": "+15250682236",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_48",
+    "agent": "agent_3",
+    "startTime": 1745488338189,
+    "duration": 595,
+    "cost": 6.89,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+11750684157",
+      "callee": "+15662034532",
+      "type": "outbound",
+      "stats": {"llmLatency": 129, "ttsLatency": 715, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_49",
+    "agent": "agent_2",
+    "startTime": 1745679091830,
+    "duration": 296,
+    "cost": 5.12,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+18107574129",
+      "callee": "+15101745863",
+      "type": "inbound",
+      "stats": {"llmLatency": 698, "ttsLatency": 846, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_50",
+    "agent": "agent_1",
+    "startTime": 1745558565773,
+    "duration": 102,
+    "cost": 9,
+    "status": "success",
+    "callInfo": {
+      "caller": "+14239727192",
+      "callee": "+17346894088",
+      "type": "inbound",
+      "stats": {"llmLatency": 599, "ttsLatency": 817, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_51",
+    "agent": "agent_1",
+    "startTime": 1745671647473,
+    "duration": 76,
+    "cost": 7.8,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+14416690858",
+      "callee": "+13419462914",
+      "type": "outbound",
+      "stats": {"llmLatency": 967, "ttsLatency": 965, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_52",
+    "agent": "agent_4",
+    "startTime": 1743723684678,
+    "duration": 394,
+    "cost": 4.5,
+    "status": "success",
+    "callInfo": {
+      "caller": "+17015975748",
+      "callee": "+15889064422",
+      "type": "outbound",
+      "stats": {"llmLatency": 79, "ttsLatency": 378, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_53",
+    "agent": "agent_3",
+    "startTime": 1745484066180,
+    "duration": 141,
+    "cost": 1.54,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+17220200041",
+      "callee": "+15603285521",
+      "type": "inbound",
+      "stats": {"llmLatency": 80, "ttsLatency": 613, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_54",
+    "agent": "agent_3",
+    "startTime": 1743312927047,
+    "duration": 0,
+    "cost": 6.27,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+16441076874",
+      "callee": "+14015362372",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_55",
+    "agent": "agent_3",
+    "startTime": 1744150134810,
+    "duration": 0,
+    "cost": 7.5,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+19020013368",
+      "callee": "+14230396747",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_56",
+    "agent": "agent_1",
+    "startTime": 1744287916491,
+    "duration": 100,
+    "cost": 6.66,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+19551083265",
+      "callee": "+15524561361",
+      "type": "inbound",
+      "stats": {"llmLatency": 596, "ttsLatency": 782, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_57",
+    "agent": "agent_1",
+    "startTime": 1745229427059,
+    "duration": 426,
+    "cost": 9.53,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+13623223000",
+      "callee": "+19359755984",
+      "type": "inbound",
+      "stats": {"llmLatency": 531, "ttsLatency": 325, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_58",
+    "agent": "agent_4",
+    "startTime": 1743608797351,
+    "duration": 320,
+    "cost": 7.99,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+14653357678",
+      "callee": "+17099321285",
+      "type": "outbound",
+      "stats": {"llmLatency": 981, "ttsLatency": 467, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_59",
+    "agent": "agent_4",
+    "startTime": 1745701071907,
+    "duration": 194,
+    "cost": 8.03,
+    "status": "success",
+    "callInfo": {
+      "caller": "+15959909836",
+      "callee": "+11713636393",
+      "type": "outbound",
+      "stats": {"llmLatency": 686, "ttsLatency": 312, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_60",
+    "agent": "agent_3",
+    "startTime": 1743715676307,
+    "duration": 124,
+    "cost": 2.31,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+16245337088",
+      "callee": "+15611337612",
+      "type": "outbound",
+      "stats": {"llmLatency": 170, "ttsLatency": 293, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_61",
+    "agent": "agent_3",
+    "startTime": 1743569274674,
+    "duration": 537,
+    "cost": 8.35,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+15289383609",
+      "callee": "+19360476891",
+      "type": "outbound",
+      "stats": {"llmLatency": 865, "ttsLatency": 159, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_62",
+    "agent": "agent_5",
+    "startTime": 1744829499349,
+    "duration": 366,
+    "cost": 4.91,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+12348631643",
+      "callee": "+19039857950",
+      "type": "outbound",
+      "stats": {"llmLatency": 475, "ttsLatency": 12, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_63",
+    "agent": "agent_1",
+    "startTime": 1745158418657,
+    "duration": 474,
+    "cost": 8.18,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+12684649588",
+      "callee": "+13877428431",
+      "type": "outbound",
+      "stats": {"llmLatency": 961, "ttsLatency": 988, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_64",
+    "agent": "agent_4",
+    "startTime": 1745664218454,
+    "duration": 0,
+    "cost": 9.52,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+13174709139",
+      "callee": "+12922418564",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_65",
+    "agent": "agent_4",
+    "startTime": 1744397289089,
+    "duration": 107,
+    "cost": 9.8,
+    "status": "success",
+    "callInfo": {
+      "caller": "+17537242226",
+      "callee": "+12867121595",
+      "type": "inbound",
+      "stats": {"llmLatency": 987, "ttsLatency": 109, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_66",
+    "agent": "agent_4",
+    "startTime": 1744374194410,
+    "duration": 120,
+    "cost": 6.93,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+13062031476",
+      "callee": "+17034594910",
+      "type": "inbound",
+      "stats": {"llmLatency": 7, "ttsLatency": 709, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_67",
+    "agent": "agent_4",
+    "startTime": 1744302099273,
+    "duration": 498,
+    "cost": 9.47,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+14961611251",
+      "callee": "+18446424108",
+      "type": "inbound",
+      "stats": {"llmLatency": 76, "ttsLatency": 948, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_68",
+    "agent": "agent_4",
+    "startTime": 1745332543682,
+    "duration": 405,
+    "cost": 2.64,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+18614100673",
+      "callee": "+16338618451",
+      "type": "inbound",
+      "stats": {"llmLatency": 786, "ttsLatency": 756, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_69",
+    "agent": "agent_2",
+    "startTime": 1744399061658,
+    "duration": 434,
+    "cost": 4.56,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+16187414039",
+      "callee": "+13450175014",
+      "type": "outbound",
+      "stats": {"llmLatency": 300, "ttsLatency": 921, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_70",
+    "agent": "agent_4",
+    "startTime": 1743584275792,
+    "duration": 471,
+    "cost": 7.02,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+14435709204",
+      "callee": "+14496990828",
+      "type": "inbound",
+      "stats": {"llmLatency": 242, "ttsLatency": 827, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_71",
+    "agent": "agent_1",
+    "startTime": 1743910083840,
+    "duration": 0,
+    "cost": 4.65,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+18609508238",
+      "callee": "+15460872808",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_72",
+    "agent": "agent_1",
+    "startTime": 1743530659270,
+    "duration": 467,
+    "cost": 8.82,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+16688860734",
+      "callee": "+18402379294",
+      "type": "inbound",
+      "stats": {"llmLatency": 743, "ttsLatency": 616, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_73",
+    "agent": "agent_5",
+    "startTime": 1743970923861,
+    "duration": 234,
+    "cost": 2.55,
+    "status": "success",
+    "callInfo": {
+      "caller": "+16485590069",
+      "callee": "+11581771997",
+      "type": "inbound",
+      "stats": {"llmLatency": 498, "ttsLatency": 286, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_74",
+    "agent": "agent_1",
+    "startTime": 1745089515206,
+    "duration": 374,
+    "cost": 0.47,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+13962587576",
+      "callee": "+17672563442",
+      "type": "inbound",
+      "stats": {"llmLatency": 35, "ttsLatency": 374, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_75",
+    "agent": "agent_4",
+    "startTime": 1745697720009,
+    "duration": 385,
+    "cost": 4.44,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+17502550214",
+      "callee": "+18230339665",
+      "type": "outbound",
+      "stats": {"llmLatency": 477, "ttsLatency": 76, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_76",
+    "agent": "agent_5",
+    "startTime": 1744173883164,
+    "duration": 134,
+    "cost": 0.82,
+    "status": "success",
+    "callInfo": {
+      "caller": "+12879770462",
+      "callee": "+17691237755",
+      "type": "outbound",
+      "stats": {"llmLatency": 621, "ttsLatency": 832, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_77",
+    "agent": "agent_2",
+    "startTime": 1744805971551,
+    "duration": 233,
+    "cost": 5.56,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+17211704680",
+      "callee": "+15972673572",
+      "type": "inbound",
+      "stats": {"llmLatency": 521, "ttsLatency": 42, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_78",
+    "agent": "agent_3",
+    "startTime": 1743561796504,
+    "duration": 297,
+    "cost": 5.16,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+16928213355",
+      "callee": "+19830361912",
+      "type": "outbound",
+      "stats": {"llmLatency": 670, "ttsLatency": 242, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_79",
+    "agent": "agent_4",
+    "startTime": 1744850959269,
+    "duration": 0,
+    "cost": 4.65,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+18320602078",
+      "callee": "+18497754218",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_80",
+    "agent": "agent_3",
+    "startTime": 1744946385943,
+    "duration": 501,
+    "cost": 5.02,
+    "status": "success",
+    "callInfo": {
+      "caller": "+14124267148",
+      "callee": "+16089405005",
+      "type": "outbound",
+      "stats": {"llmLatency": 73, "ttsLatency": 982, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_81",
+    "agent": "agent_4",
+    "startTime": 1744010932538,
+    "duration": 141,
+    "cost": 7.51,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+19793874417",
+      "callee": "+11747609098",
+      "type": "inbound",
+      "stats": {"llmLatency": 808, "ttsLatency": 677, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_82",
+    "agent": "agent_3",
+    "startTime": 1743455871613,
+    "duration": 253,
+    "cost": 8.02,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+18638151758",
+      "callee": "+18464730114",
+      "type": "outbound",
+      "stats": {"llmLatency": 337, "ttsLatency": 124, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_83",
+    "agent": "agent_2",
+    "startTime": 1744015124547,
+    "duration": 269,
+    "cost": 4.57,
+    "status": "success",
+    "callInfo": {
+      "caller": "+12583133317",
+      "callee": "+18856706829",
+      "type": "inbound",
+      "stats": {"llmLatency": 421, "ttsLatency": 280, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_84",
+    "agent": "agent_1",
+    "startTime": 1745017990299,
+    "duration": 511,
+    "cost": 7.99,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+13801991487",
+      "callee": "+18877254543",
+      "type": "inbound",
+      "stats": {"llmLatency": 637, "ttsLatency": 60, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_85",
+    "agent": "agent_3",
+    "startTime": 1744666467298,
+    "duration": 410,
+    "cost": 0.48,
+    "status": "success",
+    "callInfo": {
+      "caller": "+14552640299",
+      "callee": "+18571028195",
+      "type": "inbound",
+      "stats": {"llmLatency": 839, "ttsLatency": 962, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_86",
+    "agent": "agent_3",
+    "startTime": 1745439444439,
+    "duration": 124,
+    "cost": 8.61,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+19914331961",
+      "callee": "+15778091888",
+      "type": "outbound",
+      "stats": {"llmLatency": 394, "ttsLatency": 210, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_87",
+    "agent": "agent_4",
+    "startTime": 1744165711702,
+    "duration": 0,
+    "cost": 5.7,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+16926215508",
+      "callee": "+19248975911",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_88",
+    "agent": "agent_2",
+    "startTime": 1743649253976,
+    "duration": 536,
+    "cost": 3.52,
+    "status": "success",
+    "callInfo": {
+      "caller": "+16011599416",
+      "callee": "+16774595853",
+      "type": "outbound",
+      "stats": {"llmLatency": 704, "ttsLatency": 948, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_89",
+    "agent": "agent_3",
+    "startTime": 1744021118219,
+    "duration": 0,
+    "cost": 4.97,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+17468832482",
+      "callee": "+17702200326",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_90",
+    "agent": "agent_3",
+    "startTime": 1743931375731,
+    "duration": 118,
+    "cost": 6.49,
+    "status": "success",
+    "callInfo": {
+      "caller": "+17100433534",
+      "callee": "+19927675802",
+      "type": "inbound",
+      "stats": {"llmLatency": 611, "ttsLatency": 869, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_91",
+    "agent": "agent_3",
+    "startTime": 1744562482313,
+    "duration": 255,
+    "cost": 1.19,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+14025727223",
+      "callee": "+12957005679",
+      "type": "outbound",
+      "stats": {"llmLatency": 558, "ttsLatency": 710, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_92",
+    "agent": "agent_4",
+    "startTime": 1743300028401,
+    "duration": 501,
+    "cost": 5.49,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+11737471541",
+      "callee": "+18305259475",
+      "type": "inbound",
+      "stats": {"llmLatency": 225, "ttsLatency": 696, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_93",
+    "agent": "agent_4",
+    "startTime": 1744905096500,
+    "duration": 0,
+    "cost": 7.36,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+18532795479",
+      "callee": "+19060423856",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_94",
+    "agent": "agent_2",
+    "startTime": 1744439713996,
+    "duration": 0,
+    "cost": 5.02,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+19319343809",
+      "callee": "+15738556654",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_95",
+    "agent": "agent_3",
+    "startTime": 1744992124739,
+    "duration": 455,
+    "cost": 5.5,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+15532985482",
+      "callee": "+15190177479",
+      "type": "inbound",
+      "stats": {"llmLatency": 253, "ttsLatency": 714, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_96",
+    "agent": "agent_4",
+    "startTime": 1744859668444,
+    "duration": 0,
+    "cost": 7.74,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+15255546289",
+      "callee": "+11251516875",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_97",
+    "agent": "agent_5",
+    "startTime": 1745574523782,
+    "duration": 398,
+    "cost": 9.65,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+18864727733",
+      "callee": "+12423206928",
+      "type": "inbound",
+      "stats": {"llmLatency": 50, "ttsLatency": 54, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_98",
+    "agent": "agent_2",
+    "startTime": 1744264544654,
+    "duration": 96,
+    "cost": 5.31,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+13157973054",
+      "callee": "+13365765172",
+      "type": "outbound",
+      "stats": {"llmLatency": 130, "ttsLatency": 322, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_99",
+    "agent": "agent_4",
+    "startTime": 1744657629316,
+    "duration": 0,
+    "cost": 9.12,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+19289988313",
+      "callee": "+12136935975",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_100",
+    "agent": "agent_2",
+    "startTime": 1745490770676,
+    "duration": 0,
+    "cost": 1.39,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+14643917595",
+      "callee": "+15994949949",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_101",
+    "agent": "agent_4",
+    "startTime": 1744314016196,
+    "duration": 489,
+    "cost": 5.42,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+19623049526",
+      "callee": "+17848597723",
+      "type": "outbound",
+      "stats": {"llmLatency": 272, "ttsLatency": 83, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_102",
+    "agent": "agent_5",
+    "startTime": 1744557328065,
+    "duration": 446,
+    "cost": 2.35,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+12169888007",
+      "callee": "+12332895039",
+      "type": "inbound",
+      "stats": {"llmLatency": 134, "ttsLatency": 971, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_103",
+    "agent": "agent_2",
+    "startTime": 1744051532948,
+    "duration": 126,
+    "cost": 8.78,
+    "status": "success",
+    "callInfo": {
+      "caller": "+11261463665",
+      "callee": "+12645862229",
+      "type": "inbound",
+      "stats": {"llmLatency": 776, "ttsLatency": 788, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_104",
+    "agent": "agent_5",
+    "startTime": 1744342363652,
+    "duration": 0,
+    "cost": 5.56,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+11339350533",
+      "callee": "+15238179919",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_105",
+    "agent": "agent_1",
+    "startTime": 1744209851420,
+    "duration": 332,
+    "cost": 3.79,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+11520223993",
+      "callee": "+14818836941",
+      "type": "outbound",
+      "stats": {"llmLatency": 712, "ttsLatency": 151, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_106",
+    "agent": "agent_1",
+    "startTime": 1744141566054,
+    "duration": 536,
+    "cost": 3.38,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+11438107434",
+      "callee": "+16807089801",
+      "type": "outbound",
+      "stats": {"llmLatency": 675, "ttsLatency": 489, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_107",
+    "agent": "agent_1",
+    "startTime": 1743912309194,
+    "duration": 241,
+    "cost": 4.5,
+    "status": "success",
+    "callInfo": {
+      "caller": "+12721766950",
+      "callee": "+15035533872",
+      "type": "inbound",
+      "stats": {"llmLatency": 926, "ttsLatency": 242, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_108",
+    "agent": "agent_2",
+    "startTime": 1743643768438,
+    "duration": 50,
+    "cost": 6.44,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+11821049638",
+      "callee": "+18123240620",
+      "type": "outbound",
+      "stats": {"llmLatency": 269, "ttsLatency": 241, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_109",
+    "agent": "agent_3",
+    "startTime": 1745219292356,
+    "duration": 0,
+    "cost": 0.94,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+12633690701",
+      "callee": "+14642688021",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_110",
+    "agent": "agent_5",
+    "startTime": 1743432595876,
+    "duration": 521,
+    "cost": 0.44,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+19041409826",
+      "callee": "+14087457236",
+      "type": "outbound",
+      "stats": {"llmLatency": 616, "ttsLatency": 542, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_111",
+    "agent": "agent_5",
+    "startTime": 1745052385985,
+    "duration": 448,
+    "cost": 3.47,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+12344026795",
+      "callee": "+16756820883",
+      "type": "outbound",
+      "stats": {"llmLatency": 622, "ttsLatency": 572, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_112",
+    "agent": "agent_2",
+    "startTime": 1744250285458,
+    "duration": 463,
+    "cost": 1.09,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+11469477584",
+      "callee": "+11422819260",
+      "type": "inbound",
+      "stats": {"llmLatency": 854, "ttsLatency": 64, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_113",
+    "agent": "agent_3",
+    "startTime": 1743763506001,
+    "duration": 216,
+    "cost": 2.73,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+17284258698",
+      "callee": "+13282478030",
+      "type": "inbound",
+      "stats": {"llmLatency": 22, "ttsLatency": 695, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_114",
+    "agent": "agent_1",
+    "startTime": 1743410152047,
+    "duration": 502,
+    "cost": 3.73,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+14760367860",
+      "callee": "+18162739390",
+      "type": "inbound",
+      "stats": {"llmLatency": 741, "ttsLatency": 703, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_115",
+    "agent": "agent_3",
+    "startTime": 1744965500160,
+    "duration": 0,
+    "cost": 2.17,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+13852206882",
+      "callee": "+13926887856",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_116",
+    "agent": "agent_1",
+    "startTime": 1744368070538,
+    "duration": 364,
+    "cost": 9.07,
+    "status": "success",
+    "callInfo": {
+      "caller": "+13551829209",
+      "callee": "+17263820727",
+      "type": "outbound",
+      "stats": {"llmLatency": 581, "ttsLatency": 856, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_117",
+    "agent": "agent_3",
+    "startTime": 1745381473471,
+    "duration": 439,
+    "cost": 9.63,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+15775984046",
+      "callee": "+15964870795",
+      "type": "outbound",
+      "stats": {"llmLatency": 391, "ttsLatency": 551, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_118",
+    "agent": "agent_1",
+    "startTime": 1745522822905,
+    "duration": 369,
+    "cost": 5.8,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+13282152498",
+      "callee": "+19714975743",
+      "type": "outbound",
+      "stats": {"llmLatency": 370, "ttsLatency": 51, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_119",
+    "agent": "agent_2",
+    "startTime": 1745740546421,
+    "duration": 392,
+    "cost": 2.5,
+    "status": "success",
+    "callInfo": {
+      "caller": "+14585071176",
+      "callee": "+12552112859",
+      "type": "inbound",
+      "stats": {"llmLatency": 964, "ttsLatency": 59, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_120",
+    "agent": "agent_4",
+    "startTime": 1743834105909,
+    "duration": 432,
+    "cost": 4.85,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+17526460884",
+      "callee": "+12910578200",
+      "type": "outbound",
+      "stats": {"llmLatency": 244, "ttsLatency": 237, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_121",
+    "agent": "agent_5",
+    "startTime": 1744065366912,
+    "duration": 0,
+    "cost": 9.72,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+14410975401",
+      "callee": "+19148997835",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_122",
+    "agent": "agent_1",
+    "startTime": 1743851522281,
+    "duration": 0,
+    "cost": 9.37,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+16857990975",
+      "callee": "+16514061512",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_123",
+    "agent": "agent_3",
+    "startTime": 1744746894399,
+    "duration": 240,
+    "cost": 0.42,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+19133517053",
+      "callee": "+14193549099",
+      "type": "outbound",
+      "stats": {"llmLatency": 588, "ttsLatency": 851, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_124",
+    "agent": "agent_3",
+    "startTime": 1744077303076,
+    "duration": 76,
+    "cost": 6.32,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+12241545830",
+      "callee": "+15425841210",
+      "type": "inbound",
+      "stats": {"llmLatency": 843, "ttsLatency": 836, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_125",
+    "agent": "agent_3",
+    "startTime": 1743633930427,
+    "duration": 267,
+    "cost": 1.79,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+13602579651",
+      "callee": "+15653334260",
+      "type": "outbound",
+      "stats": {"llmLatency": 409, "ttsLatency": 474, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_126",
+    "agent": "agent_2",
+    "startTime": 1744725890059,
+    "duration": 0,
+    "cost": 1.07,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+11297693275",
+      "callee": "+16748694564",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_127",
+    "agent": "agent_1",
+    "startTime": 1743585634771,
+    "duration": 0,
+    "cost": 4.02,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+16260444730",
+      "callee": "+13100729471",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_128",
+    "agent": "agent_2",
+    "startTime": 1744076884135,
+    "duration": 0,
+    "cost": 7.13,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+15123745944",
+      "callee": "+12277376191",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_129",
+    "agent": "agent_2",
+    "startTime": 1744317418610,
+    "duration": 46,
+    "cost": 0.39,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+13701136033",
+      "callee": "+14877661171",
+      "type": "inbound",
+      "stats": {"llmLatency": 205, "ttsLatency": 36, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_130",
+    "agent": "agent_2",
+    "startTime": 1743293148343,
+    "duration": 0,
+    "cost": 1.71,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+13717034273",
+      "callee": "+11869845203",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_131",
+    "agent": "agent_2",
+    "startTime": 1744881179588,
+    "duration": 478,
+    "cost": 1.48,
+    "status": "success",
+    "callInfo": {
+      "caller": "+16300797619",
+      "callee": "+14883159373",
+      "type": "inbound",
+      "stats": {"llmLatency": 163, "ttsLatency": 870, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_132",
+    "agent": "agent_3",
+    "startTime": 1745521053074,
+    "duration": 587,
+    "cost": 7.02,
+    "status": "success",
+    "callInfo": {
+      "caller": "+19030445467",
+      "callee": "+17812441382",
+      "type": "outbound",
+      "stats": {"llmLatency": 559, "ttsLatency": 663, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_133",
+    "agent": "agent_3",
+    "startTime": 1744685860209,
+    "duration": 398,
+    "cost": 3.16,
+    "status": "success",
+    "callInfo": {
+      "caller": "+15916443519",
+      "callee": "+17398048507",
+      "type": "inbound",
+      "stats": {"llmLatency": 34, "ttsLatency": 727, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_134",
+    "agent": "agent_4",
+    "startTime": 1745052716193,
+    "duration": 593,
+    "cost": 9.92,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+12501869852",
+      "callee": "+19449463879",
+      "type": "outbound",
+      "stats": {"llmLatency": 724, "ttsLatency": 231, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_135",
+    "agent": "agent_5",
+    "startTime": 1745236481911,
+    "duration": 327,
+    "cost": 7.35,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+17333464263",
+      "callee": "+13048128576",
+      "type": "outbound",
+      "stats": {"llmLatency": 506, "ttsLatency": 239, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_136",
+    "agent": "agent_5",
+    "startTime": 1744550462953,
+    "duration": 346,
+    "cost": 9.15,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+11227835828",
+      "callee": "+19475369694",
+      "type": "inbound",
+      "stats": {"llmLatency": 217, "ttsLatency": 950, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_137",
+    "agent": "agent_3",
+    "startTime": 1745286118972,
+    "duration": 0,
+    "cost": 0.92,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+13263352309",
+      "callee": "+18305935663",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_138",
+    "agent": "agent_4",
+    "startTime": 1744347790547,
+    "duration": 578,
+    "cost": 0.97,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+13759788826",
+      "callee": "+13447666013",
+      "type": "outbound",
+      "stats": {"llmLatency": 982, "ttsLatency": 716, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_139",
+    "agent": "agent_2",
+    "startTime": 1743834965899,
+    "duration": 115,
+    "cost": 7.41,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+19493949143",
+      "callee": "+11148784581",
+      "type": "outbound",
+      "stats": {"llmLatency": 736, "ttsLatency": 128, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_140",
+    "agent": "agent_2",
+    "startTime": 1745734180352,
+    "duration": 0,
+    "cost": 6.81,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+13649632844",
+      "callee": "+12752225814",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_141",
+    "agent": "agent_1",
+    "startTime": 1745071162600,
+    "duration": 187,
+    "cost": 1.61,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+14951964749",
+      "callee": "+18439106211",
+      "type": "outbound",
+      "stats": {"llmLatency": 156, "ttsLatency": 409, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_142",
+    "agent": "agent_2",
+    "startTime": 1743897102594,
+    "duration": 0,
+    "cost": 4.63,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+12937194735",
+      "callee": "+19666003520",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_143",
+    "agent": "agent_3",
+    "startTime": 1744830402640,
+    "duration": 510,
+    "cost": 3.11,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+17526093624",
+      "callee": "+15603296650",
+      "type": "inbound",
+      "stats": {"llmLatency": 197, "ttsLatency": 334, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_144",
+    "agent": "agent_3",
+    "startTime": 1744742640820,
+    "duration": 181,
+    "cost": 5.72,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+15733658321",
+      "callee": "+14229432556",
+      "type": "outbound",
+      "stats": {"llmLatency": 482, "ttsLatency": 311, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_145",
+    "agent": "agent_5",
+    "startTime": 1744927539095,
+    "duration": 0,
+    "cost": 0.19,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+16391684936",
+      "callee": "+14330241187",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_146",
+    "agent": "agent_5",
+    "startTime": 1744897138037,
+    "duration": 509,
+    "cost": 6.23,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+12538160382",
+      "callee": "+13324999888",
+      "type": "outbound",
+      "stats": {"llmLatency": 681, "ttsLatency": 190, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_147",
+    "agent": "agent_4",
+    "startTime": 1745703959833,
+    "duration": 76,
+    "cost": 5.69,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+17185975613",
+      "callee": "+13297088322",
+      "type": "inbound",
+      "stats": {"llmLatency": 537, "ttsLatency": 760, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_148",
+    "agent": "agent_2",
+    "startTime": 1744765080189,
+    "duration": 0,
+    "cost": 2.23,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+19021969848",
+      "callee": "+14063831081",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_149",
+    "agent": "agent_5",
+    "startTime": 1745749574928,
+    "duration": 402,
+    "cost": 2.03,
+    "status": "success",
+    "callInfo": {
+      "caller": "+18245419405",
+      "callee": "+15290229293",
+      "type": "inbound",
+      "stats": {"llmLatency": 778, "ttsLatency": 488, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_150",
+    "agent": "agent_1",
+    "startTime": 1744072926355,
+    "duration": 150,
+    "cost": 3.29,
+    "status": "success",
+    "callInfo": {
+      "caller": "+14090189326",
+      "callee": "+13268704934",
+      "type": "outbound",
+      "stats": {"llmLatency": 127, "ttsLatency": 683, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_151",
+    "agent": "agent_3",
+    "startTime": 1743705054250,
+    "duration": 421,
+    "cost": 6.21,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+18857642818",
+      "callee": "+17842136570",
+      "type": "outbound",
+      "stats": {"llmLatency": 683, "ttsLatency": 968, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_152",
+    "agent": "agent_3",
+    "startTime": 1744487030580,
+    "duration": 0,
+    "cost": 2,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+18187749369",
+      "callee": "+17691631112",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_153",
+    "agent": "agent_3",
+    "startTime": 1744409901226,
+    "duration": 40,
+    "cost": 2.36,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+19649894269",
+      "callee": "+19689032453",
+      "type": "inbound",
+      "stats": {"llmLatency": 434, "ttsLatency": 951, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_154",
+    "agent": "agent_1",
+    "startTime": 1745112450100,
+    "duration": 214,
+    "cost": 9.64,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+15086882748",
+      "callee": "+15150568200",
+      "type": "outbound",
+      "stats": {"llmLatency": 691, "ttsLatency": 990, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_155",
+    "agent": "agent_4",
+    "startTime": 1745330287849,
+    "duration": 113,
+    "cost": 7.45,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+17395244794",
+      "callee": "+17592961694",
+      "type": "inbound",
+      "stats": {"llmLatency": 561, "ttsLatency": 336, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_156",
+    "agent": "agent_2",
+    "startTime": 1744626868471,
+    "duration": 0,
+    "cost": 4.17,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+16341029141",
+      "callee": "+14245101292",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_157",
+    "agent": "agent_5",
+    "startTime": 1745333098564,
+    "duration": 598,
+    "cost": 2.78,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+19941399392",
+      "callee": "+15911691402",
+      "type": "outbound",
+      "stats": {"llmLatency": 565, "ttsLatency": 638, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_158",
+    "agent": "agent_4",
+    "startTime": 1743389033265,
+    "duration": 527,
+    "cost": 9.63,
+    "status": "success",
+    "callInfo": {
+      "caller": "+17555772208",
+      "callee": "+12984392059",
+      "type": "outbound",
+      "stats": {"llmLatency": 717, "ttsLatency": 694, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_159",
+    "agent": "agent_2",
+    "startTime": 1744731691841,
+    "duration": 0,
+    "cost": 4.43,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+19300099782",
+      "callee": "+18885789442",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_160",
+    "agent": "agent_3",
+    "startTime": 1745090381516,
+    "duration": 0,
+    "cost": 1.1,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+16217575368",
+      "callee": "+12809925387",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_161",
+    "agent": "agent_5",
+    "startTime": 1743553091156,
+    "duration": 0,
+    "cost": 9.54,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+14328489075",
+      "callee": "+15797297264",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_162",
+    "agent": "agent_3",
+    "startTime": 1744433729912,
+    "duration": 361,
+    "cost": 1.75,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+13232800098",
+      "callee": "+12227395147",
+      "type": "inbound",
+      "stats": {"llmLatency": 140, "ttsLatency": 171, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_163",
+    "agent": "agent_1",
+    "startTime": 1744950217310,
+    "duration": 551,
+    "cost": 7.42,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+17958754791",
+      "callee": "+17548306203",
+      "type": "inbound",
+      "stats": {"llmLatency": 92, "ttsLatency": 400, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_164",
+    "agent": "agent_3",
+    "startTime": 1743754388160,
+    "duration": 0,
+    "cost": 3.59,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+11717466681",
+      "callee": "+19353097998",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_165",
+    "agent": "agent_1",
+    "startTime": 1744305400760,
+    "duration": 364,
+    "cost": 9.13,
+    "status": "success",
+    "callInfo": {
+      "caller": "+13788303459",
+      "callee": "+12238363587",
+      "type": "inbound",
+      "stats": {"llmLatency": 41, "ttsLatency": 841, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_166",
+    "agent": "agent_1",
+    "startTime": 1743690920377,
+    "duration": 164,
+    "cost": 1.69,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+13028627829",
+      "callee": "+11017200547",
+      "type": "outbound",
+      "stats": {"llmLatency": 696, "ttsLatency": 762, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_167",
+    "agent": "agent_2",
+    "startTime": 1743708967549,
+    "duration": 134,
+    "cost": 7.49,
+    "status": "success",
+    "callInfo": {
+      "caller": "+11950029362",
+      "callee": "+12152962047",
+      "type": "outbound",
+      "stats": {"llmLatency": 4, "ttsLatency": 701, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_168",
+    "agent": "agent_2",
+    "startTime": 1745301187257,
+    "duration": 0,
+    "cost": 6.86,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+13033515215",
+      "callee": "+19240319533",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_169",
+    "agent": "agent_3",
+    "startTime": 1743871310779,
+    "duration": 0,
+    "cost": 1.57,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+16717023962",
+      "callee": "+11613043126",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_170",
+    "agent": "agent_4",
+    "startTime": 1745350552981,
+    "duration": 543,
+    "cost": 3.22,
+    "status": "success",
+    "callInfo": {
+      "caller": "+14813701940",
+      "callee": "+18850848188",
+      "type": "inbound",
+      "stats": {"llmLatency": 396, "ttsLatency": 986, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_171",
+    "agent": "agent_1",
+    "startTime": 1743736752015,
+    "duration": 0,
+    "cost": 2.62,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+18911504368",
+      "callee": "+17268446990",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_172",
+    "agent": "agent_2",
+    "startTime": 1743602896684,
+    "duration": 279,
+    "cost": 7.35,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+15020959219",
+      "callee": "+18083073526",
+      "type": "inbound",
+      "stats": {"llmLatency": 343, "ttsLatency": 896, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_173",
+    "agent": "agent_1",
+    "startTime": 1743866723155,
+    "duration": 193,
+    "cost": 3.72,
+    "status": "success",
+    "callInfo": {
+      "caller": "+17674821619",
+      "callee": "+13508255579",
+      "type": "inbound",
+      "stats": {"llmLatency": 46, "ttsLatency": 503, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_174",
+    "agent": "agent_1",
+    "startTime": 1744441439382,
+    "duration": 519,
+    "cost": 7.73,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+15387084778",
+      "callee": "+11489254994",
+      "type": "inbound",
+      "stats": {"llmLatency": 889, "ttsLatency": 753, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_175",
+    "agent": "agent_4",
+    "startTime": 1743433494248,
+    "duration": 109,
+    "cost": 1.9,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+17383040173",
+      "callee": "+11064893921",
+      "type": "inbound",
+      "stats": {"llmLatency": 624, "ttsLatency": 418, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_176",
+    "agent": "agent_3",
+    "startTime": 1744167268945,
+    "duration": 281,
+    "cost": 9.27,
+    "status": "success",
+    "callInfo": {
+      "caller": "+14185619711",
+      "callee": "+15631824355",
+      "type": "inbound",
+      "stats": {"llmLatency": 180, "ttsLatency": 922, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_177",
+    "agent": "agent_3",
+    "startTime": 1745153933925,
+    "duration": 412,
+    "cost": 4.02,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+17492041723",
+      "callee": "+12555718721",
+      "type": "outbound",
+      "stats": {"llmLatency": 415, "ttsLatency": 945, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_178",
+    "agent": "agent_4",
+    "startTime": 1744876651325,
+    "duration": 57,
+    "cost": 1.61,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+18280651358",
+      "callee": "+14460102754",
+      "type": "outbound",
+      "stats": {"llmLatency": 784, "ttsLatency": 848, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_179",
+    "agent": "agent_2",
+    "startTime": 1743568301502,
+    "duration": 38,
+    "cost": 6.97,
+    "status": "success",
+    "callInfo": {
+      "caller": "+18425804432",
+      "callee": "+16268159938",
+      "type": "inbound",
+      "stats": {"llmLatency": 427, "ttsLatency": 553, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_180",
+    "agent": "agent_5",
+    "startTime": 1744325218811,
+    "duration": 0,
+    "cost": 0.29,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+12189520098",
+      "callee": "+16427039815",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_181",
+    "agent": "agent_4",
+    "startTime": 1745422770154,
+    "duration": 0,
+    "cost": 4.13,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+16197850565",
+      "callee": "+12778012520",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_182",
+    "agent": "agent_2",
+    "startTime": 1745327558752,
+    "duration": 444,
+    "cost": 3.48,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+11080825557",
+      "callee": "+15689185715",
+      "type": "outbound",
+      "stats": {"llmLatency": 338, "ttsLatency": 734, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_183",
+    "agent": "agent_5",
+    "startTime": 1745202562030,
+    "duration": 0,
+    "cost": 9.33,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+12994509901",
+      "callee": "+16504440383",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_184",
+    "agent": "agent_4",
+    "startTime": 1743990608672,
+    "duration": 435,
+    "cost": 6.16,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+18743328180",
+      "callee": "+14133227929",
+      "type": "outbound",
+      "stats": {"llmLatency": 32, "ttsLatency": 714, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_185",
+    "agent": "agent_1",
+    "startTime": 1744476869848,
+    "duration": 113,
+    "cost": 6.28,
+    "status": "success",
+    "callInfo": {
+      "caller": "+15097890673",
+      "callee": "+18966031131",
+      "type": "outbound",
+      "stats": {"llmLatency": 852, "ttsLatency": 830, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_186",
+    "agent": "agent_2",
+    "startTime": 1743562699027,
+    "duration": 499,
+    "cost": 2.35,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+19893271760",
+      "callee": "+11955322233",
+      "type": "outbound",
+      "stats": {"llmLatency": 666, "ttsLatency": 675, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_187",
+    "agent": "agent_5",
+    "startTime": 1743782275903,
+    "duration": 0,
+    "cost": 1.54,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+14753761698",
+      "callee": "+15932113267",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_188",
+    "agent": "agent_2",
+    "startTime": 1744188909204,
+    "duration": 558,
+    "cost": 8.17,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+19284325311",
+      "callee": "+19796067091",
+      "type": "outbound",
+      "stats": {"llmLatency": 124, "ttsLatency": 72, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_189",
+    "agent": "agent_4",
+    "startTime": 1745041023466,
+    "duration": 139,
+    "cost": 5.55,
+    "status": "success",
+    "callInfo": {
+      "caller": "+16409439607",
+      "callee": "+13726794145",
+      "type": "outbound",
+      "stats": {"llmLatency": 447, "ttsLatency": 156, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_190",
+    "agent": "agent_1",
+    "startTime": 1743959108366,
+    "duration": 117,
+    "cost": 0.23,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+17562865061",
+      "callee": "+12278642947",
+      "type": "outbound",
+      "stats": {"llmLatency": 151, "ttsLatency": 361, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_191",
+    "agent": "agent_3",
+    "startTime": 1745032914305,
+    "duration": 0,
+    "cost": 1.62,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+14567372692",
+      "callee": "+12800877340",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_192",
+    "agent": "agent_5",
+    "startTime": 1743945086556,
+    "duration": 337,
+    "cost": 1.76,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+12373698182",
+      "callee": "+11070789974",
+      "type": "outbound",
+      "stats": {"llmLatency": 277, "ttsLatency": 412, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_193",
+    "agent": "agent_1",
+    "startTime": 1745229283583,
+    "duration": 264,
+    "cost": 4.76,
+    "status": "success",
+    "callInfo": {
+      "caller": "+18611479167",
+      "callee": "+15783595497",
+      "type": "inbound",
+      "stats": {"llmLatency": 168, "ttsLatency": 459, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_194",
+    "agent": "agent_2",
+    "startTime": 1745043995729,
+    "duration": 99,
+    "cost": 4.47,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+18241568046",
+      "callee": "+13957567726",
+      "type": "outbound",
+      "stats": {"llmLatency": 215, "ttsLatency": 826, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_195",
+    "agent": "agent_1",
+    "startTime": 1743733388133,
+    "duration": 428,
+    "cost": 2.3,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+16084971653",
+      "callee": "+12249659996",
+      "type": "outbound",
+      "stats": {"llmLatency": 477, "ttsLatency": 288, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_196",
+    "agent": "agent_1",
+    "startTime": 1744207941558,
+    "duration": 320,
+    "cost": 9.54,
+    "status": "success",
+    "callInfo": {
+      "caller": "+11112513794",
+      "callee": "+13607673365",
+      "type": "outbound",
+      "stats": {"llmLatency": 125, "ttsLatency": 398, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_197",
+    "agent": "agent_5",
+    "startTime": 1744226162312,
+    "duration": 255,
+    "cost": 5.72,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+17715718454",
+      "callee": "+17237914385",
+      "type": "inbound",
+      "stats": {"llmLatency": 466, "ttsLatency": 533, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_198",
+    "agent": "agent_4",
+    "startTime": 1744708519934,
+    "duration": 0,
+    "cost": 3.21,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+15817333054",
+      "callee": "+14567667090",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_199",
+    "agent": "agent_3",
+    "startTime": 1743234858787,
+    "duration": 500,
+    "cost": 0.95,
+    "status": "success",
+    "callInfo": {
+      "caller": "+17460351989",
+      "callee": "+18822098732",
+      "type": "inbound",
+      "stats": {"llmLatency": 912, "ttsLatency": 976, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_200",
+    "agent": "agent_4",
+    "startTime": 1745097937004,
+    "duration": 90,
+    "cost": 1.87,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+19134986333",
+      "callee": "+12917214027",
+      "type": "outbound",
+      "stats": {"llmLatency": 219, "ttsLatency": 491, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_201",
+    "agent": "agent_5",
+    "startTime": 1743363183575,
+    "duration": 54,
+    "cost": 2.66,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+13208571068",
+      "callee": "+19862317411",
+      "type": "inbound",
+      "stats": {"llmLatency": 402, "ttsLatency": 670, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_202",
+    "agent": "agent_2",
+    "startTime": 1744737884296,
+    "duration": 597,
+    "cost": 3.78,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+16279016529",
+      "callee": "+16765329240",
+      "type": "inbound",
+      "stats": {"llmLatency": 235, "ttsLatency": 5, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_203",
+    "agent": "agent_2",
+    "startTime": 1745618646119,
+    "duration": 205,
+    "cost": 2.65,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+12717221280",
+      "callee": "+15258674187",
+      "type": "outbound",
+      "stats": {"llmLatency": 619, "ttsLatency": 569, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_204",
+    "agent": "agent_1",
+    "startTime": 1743264277033,
+    "duration": 394,
+    "cost": 4.89,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+16560514603",
+      "callee": "+12946932728",
+      "type": "inbound",
+      "stats": {"llmLatency": 271, "ttsLatency": 159, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_205",
+    "agent": "agent_2",
+    "startTime": 1743341615067,
+    "duration": 0,
+    "cost": 7.79,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+14758546994",
+      "callee": "+16658529814",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_206",
+    "agent": "agent_2",
+    "startTime": 1744320392236,
+    "duration": 0,
+    "cost": 7.33,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+12157720289",
+      "callee": "+13878911271",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_207",
+    "agent": "agent_3",
+    "startTime": 1744436468174,
+    "duration": 0,
+    "cost": 2.88,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+18107997297",
+      "callee": "+11451029067",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_208",
+    "agent": "agent_2",
+    "startTime": 1743545221933,
+    "duration": 42,
+    "cost": 6.46,
+    "status": "success",
+    "callInfo": {
+      "caller": "+12623824953",
+      "callee": "+16728244836",
+      "type": "inbound",
+      "stats": {"llmLatency": 739, "ttsLatency": 100, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_209",
+    "agent": "agent_5",
+    "startTime": 1743619253091,
+    "duration": 199,
+    "cost": 6.11,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+16241852312",
+      "callee": "+14606920353",
+      "type": "outbound",
+      "stats": {"llmLatency": 703, "ttsLatency": 105, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_210",
+    "agent": "agent_3",
+    "startTime": 1743810079340,
+    "duration": 0,
+    "cost": 4.96,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+18480831746",
+      "callee": "+19247153556",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_211",
+    "agent": "agent_2",
+    "startTime": 1743461243016,
+    "duration": 362,
+    "cost": 5.15,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+11428377860",
+      "callee": "+14427749321",
+      "type": "inbound",
+      "stats": {"llmLatency": 822, "ttsLatency": 298, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_212",
+    "agent": "agent_5",
+    "startTime": 1743312270502,
+    "duration": 0,
+    "cost": 8.26,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+14989032224",
+      "callee": "+19261492677",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_213",
+    "agent": "agent_5",
+    "startTime": 1744840519534,
+    "duration": 47,
+    "cost": 8.2,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+18609333693",
+      "callee": "+12403864101",
+      "type": "outbound",
+      "stats": {"llmLatency": 751, "ttsLatency": 915, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_214",
+    "agent": "agent_5",
+    "startTime": 1745573451326,
+    "duration": 314,
+    "cost": 0.3,
+    "status": "success",
+    "callInfo": {
+      "caller": "+11699927185",
+      "callee": "+16549376229",
+      "type": "inbound",
+      "stats": {"llmLatency": 83, "ttsLatency": 926, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_215",
+    "agent": "agent_4",
+    "startTime": 1743754414833,
+    "duration": 0,
+    "cost": 2.11,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+13326798590",
+      "callee": "+14003580715",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_216",
+    "agent": "agent_5",
+    "startTime": 1744320651873,
+    "duration": 135,
+    "cost": 9.14,
+    "status": "success",
+    "callInfo": {
+      "caller": "+19177735763",
+      "callee": "+16340157543",
+      "type": "inbound",
+      "stats": {"llmLatency": 579, "ttsLatency": 699, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_217",
+    "agent": "agent_4",
+    "startTime": 1745769707953,
+    "duration": 479,
+    "cost": 7.13,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+14706714248",
+      "callee": "+16705210376",
+      "type": "outbound",
+      "stats": {"llmLatency": 333, "ttsLatency": 112, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_218",
+    "agent": "agent_1",
+    "startTime": 1745596235967,
+    "duration": 257,
+    "cost": 6.57,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+16642345771",
+      "callee": "+12457612296",
+      "type": "outbound",
+      "stats": {"llmLatency": 958, "ttsLatency": 562, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_219",
+    "agent": "agent_3",
+    "startTime": 1744798063077,
+    "duration": 84,
+    "cost": 2.23,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+15317307616",
+      "callee": "+15211039404",
+      "type": "outbound",
+      "stats": {"llmLatency": 107, "ttsLatency": 245, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_220",
+    "agent": "agent_3",
+    "startTime": 1743418900914,
+    "duration": 478,
+    "cost": 3.1,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+19078162728",
+      "callee": "+12945358580",
+      "type": "inbound",
+      "stats": {"llmLatency": 749, "ttsLatency": 608, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_221",
+    "agent": "agent_2",
+    "startTime": 1745321953811,
+    "duration": 250,
+    "cost": 2.57,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+16941620340",
+      "callee": "+11143813529",
+      "type": "inbound",
+      "stats": {"llmLatency": 709, "ttsLatency": 741, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_222",
+    "agent": "agent_4",
+    "startTime": 1745391099564,
+    "duration": 112,
+    "cost": 1.24,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+11260452404",
+      "callee": "+12513017155",
+      "type": "inbound",
+      "stats": {"llmLatency": 684, "ttsLatency": 719, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_223",
+    "agent": "agent_4",
+    "startTime": 1745396671634,
+    "duration": 173,
+    "cost": 8.55,
+    "status": "success",
+    "callInfo": {
+      "caller": "+15383574853",
+      "callee": "+12686725954",
+      "type": "inbound",
+      "stats": {"llmLatency": 614, "ttsLatency": 906, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_224",
+    "agent": "agent_2",
+    "startTime": 1744428255556,
+    "duration": 214,
+    "cost": 6.15,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+13868298127",
+      "callee": "+16720767126",
+      "type": "inbound",
+      "stats": {"llmLatency": 657, "ttsLatency": 471, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_225",
+    "agent": "agent_4",
+    "startTime": 1743646534083,
+    "duration": 214,
+    "cost": 4.24,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+19496648937",
+      "callee": "+19879646472",
+      "type": "outbound",
+      "stats": {"llmLatency": 411, "ttsLatency": 609, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_226",
+    "agent": "agent_1",
+    "startTime": 1745780843555,
+    "duration": 482,
+    "cost": 0.99,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+18924243426",
+      "callee": "+13258708295",
+      "type": "outbound",
+      "stats": {"llmLatency": 657, "ttsLatency": 185, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_227",
+    "agent": "agent_3",
+    "startTime": 1744996881038,
+    "duration": 309,
+    "cost": 6.94,
+    "status": "success",
+    "callInfo": {
+      "caller": "+15085955679",
+      "callee": "+14128121558",
+      "type": "outbound",
+      "stats": {"llmLatency": 208, "ttsLatency": 2, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_228",
+    "agent": "agent_2",
+    "startTime": 1744622252718,
+    "duration": 0,
+    "cost": 8.27,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+13584263008",
+      "callee": "+12754220132",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_229",
+    "agent": "agent_1",
+    "startTime": 1743823619755,
+    "duration": 0,
+    "cost": 7.4,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+19469209398",
+      "callee": "+13528861804",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_230",
+    "agent": "agent_4",
+    "startTime": 1743415876143,
+    "duration": 0,
+    "cost": 3.7,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+12064829891",
+      "callee": "+14515080122",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_231",
+    "agent": "agent_3",
+    "startTime": 1744896134773,
+    "duration": 218,
+    "cost": 3.3,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+18959689018",
+      "callee": "+18584286503",
+      "type": "outbound",
+      "stats": {"llmLatency": 451, "ttsLatency": 844, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_232",
+    "agent": "agent_5",
+    "startTime": 1745549259120,
+    "duration": 202,
+    "cost": 8.53,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+11686972220",
+      "callee": "+18186518811",
+      "type": "inbound",
+      "stats": {"llmLatency": 872, "ttsLatency": 0, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_233",
+    "agent": "agent_5",
+    "startTime": 1743979906363,
+    "duration": 231,
+    "cost": 8.06,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+19337850008",
+      "callee": "+16835102287",
+      "type": "outbound",
+      "stats": {"llmLatency": 579, "ttsLatency": 106, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_234",
+    "agent": "agent_5",
+    "startTime": 1745341851040,
+    "duration": 583,
+    "cost": 7.73,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+19858498212",
+      "callee": "+14152931766",
+      "type": "outbound",
+      "stats": {"llmLatency": 829, "ttsLatency": 657, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_235",
+    "agent": "agent_5",
+    "startTime": 1744744532526,
+    "duration": 485,
+    "cost": 0.57,
+    "status": "success",
+    "callInfo": {
+      "caller": "+15099892428",
+      "callee": "+11473220491",
+      "type": "outbound",
+      "stats": {"llmLatency": 413, "ttsLatency": 868, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_236",
+    "agent": "agent_3",
+    "startTime": 1745468546961,
+    "duration": 74,
+    "cost": 8.97,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+12194258728",
+      "callee": "+13792144762",
+      "type": "inbound",
+      "stats": {"llmLatency": 400, "ttsLatency": 836, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_237",
+    "agent": "agent_4",
+    "startTime": 1745445256456,
+    "duration": 0,
+    "cost": 8.75,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+18670581535",
+      "callee": "+15554016184",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_238",
+    "agent": "agent_3",
+    "startTime": 1745781246973,
+    "duration": 0,
+    "cost": 9.04,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+12460638636",
+      "callee": "+13681472491",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_239",
+    "agent": "agent_5",
+    "startTime": 1743831793867,
+    "duration": 370,
+    "cost": 3.14,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+13302268909",
+      "callee": "+13139529658",
+      "type": "inbound",
+      "stats": {"llmLatency": 317, "ttsLatency": 643, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_240",
+    "agent": "agent_1",
+    "startTime": 1745350039109,
+    "duration": 125,
+    "cost": 5.4,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+14309660310",
+      "callee": "+12906718963",
+      "type": "outbound",
+      "stats": {"llmLatency": 0, "ttsLatency": 847, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_241",
+    "agent": "agent_5",
+    "startTime": 1744020845729,
+    "duration": 94,
+    "cost": 3.21,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+15365371560",
+      "callee": "+14851532266",
+      "type": "outbound",
+      "stats": {"llmLatency": 20, "ttsLatency": 636, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_242",
+    "agent": "agent_2",
+    "startTime": 1743362048713,
+    "duration": 405,
+    "cost": 8.07,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+18396731774",
+      "callee": "+11637668433",
+      "type": "inbound",
+      "stats": {"llmLatency": 893, "ttsLatency": 284, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_243",
+    "agent": "agent_1",
+    "startTime": 1745211358451,
+    "duration": 0,
+    "cost": 3.96,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+13814626522",
+      "callee": "+15051103648",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_244",
+    "agent": "agent_2",
+    "startTime": 1745369350430,
+    "duration": 427,
+    "cost": 8.03,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+16340070982",
+      "callee": "+19383989615",
+      "type": "outbound",
+      "stats": {"llmLatency": 96, "ttsLatency": 585, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_245",
+    "agent": "agent_5",
+    "startTime": 1745541740478,
+    "duration": 0,
+    "cost": 5.75,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+12646038049",
+      "callee": "+19686282710",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_246",
+    "agent": "agent_1",
+    "startTime": 1744591694549,
+    "duration": 0,
+    "cost": 4.06,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+18547863518",
+      "callee": "+13976844218",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_247",
+    "agent": "agent_5",
+    "startTime": 1743784996358,
+    "duration": 114,
+    "cost": 7.78,
+    "status": "success",
+    "callInfo": {
+      "caller": "+13126782391",
+      "callee": "+18798675221",
+      "type": "inbound",
+      "stats": {"llmLatency": 296, "ttsLatency": 480, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_248",
+    "agent": "agent_1",
+    "startTime": 1743723233448,
+    "duration": 224,
+    "cost": 2.14,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+16021292618",
+      "callee": "+15066015143",
+      "type": "outbound",
+      "stats": {"llmLatency": 194, "ttsLatency": 666, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_249",
+    "agent": "agent_4",
+    "startTime": 1745209971087,
+    "duration": 480,
+    "cost": 5.88,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+12636649017",
+      "callee": "+18788955159",
+      "type": "outbound",
+      "stats": {"llmLatency": 710, "ttsLatency": 163, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_250",
+    "agent": "agent_5",
+    "startTime": 1744126489630,
+    "duration": 135,
+    "cost": 7.55,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+15516146287",
+      "callee": "+14976127230",
+      "type": "outbound",
+      "stats": {"llmLatency": 997, "ttsLatency": 314, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_251",
+    "agent": "agent_2",
+    "startTime": 1743542549911,
+    "duration": 0,
+    "cost": 2.13,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+18966533361",
+      "callee": "+12610946776",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_252",
+    "agent": "agent_5",
+    "startTime": 1743504859031,
+    "duration": 94,
+    "cost": 0.68,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+12820518522",
+      "callee": "+15698372587",
+      "type": "inbound",
+      "stats": {"llmLatency": 928, "ttsLatency": 970, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_253",
+    "agent": "agent_2",
+    "startTime": 1743879969556,
+    "duration": 418,
+    "cost": 6.09,
+    "status": "success",
+    "callInfo": {
+      "caller": "+11839061642",
+      "callee": "+15304465849",
+      "type": "inbound",
+      "stats": {"llmLatency": 165, "ttsLatency": 975, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_254",
+    "agent": "agent_5",
+    "startTime": 1744306393437,
+    "duration": 297,
+    "cost": 9.29,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+12305792356",
+      "callee": "+12551804785",
+      "type": "outbound",
+      "stats": {"llmLatency": 327, "ttsLatency": 629, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_255",
+    "agent": "agent_3",
+    "startTime": 1744371735349,
+    "duration": 294,
+    "cost": 9.99,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+15402054261",
+      "callee": "+16346738092",
+      "type": "outbound",
+      "stats": {"llmLatency": 658, "ttsLatency": 780, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_256",
+    "agent": "agent_3",
+    "startTime": 1745139191634,
+    "duration": 254,
+    "cost": 3.49,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+16626070320",
+      "callee": "+17173396236",
+      "type": "outbound",
+      "stats": {"llmLatency": 578, "ttsLatency": 100, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_257",
+    "agent": "agent_4",
+    "startTime": 1745141084317,
+    "duration": 456,
+    "cost": 8.99,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+16633340571",
+      "callee": "+19223579548",
+      "type": "inbound",
+      "stats": {"llmLatency": 550, "ttsLatency": 75, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_258",
+    "agent": "agent_5",
+    "startTime": 1744155945125,
+    "duration": 0,
+    "cost": 9.98,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+18215806597",
+      "callee": "+17271680057",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_259",
+    "agent": "agent_4",
+    "startTime": 1743372446977,
+    "duration": 0,
+    "cost": 5.51,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+13830863210",
+      "callee": "+13528832367",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_260",
+    "agent": "agent_4",
+    "startTime": 1744110437361,
+    "duration": 114,
+    "cost": 7.79,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+15005336902",
+      "callee": "+11617349728",
+      "type": "inbound",
+      "stats": {"llmLatency": 852, "ttsLatency": 834, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_261",
+    "agent": "agent_2",
+    "startTime": 1743587541227,
+    "duration": 598,
+    "cost": 2.93,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+14728661993",
+      "callee": "+11783283584",
+      "type": "outbound",
+      "stats": {"llmLatency": 505, "ttsLatency": 453, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_262",
+    "agent": "agent_4",
+    "startTime": 1744090413186,
+    "duration": 592,
+    "cost": 6.97,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+16241839852",
+      "callee": "+15992441410",
+      "type": "outbound",
+      "stats": {"llmLatency": 817, "ttsLatency": 13, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_263",
+    "agent": "agent_1",
+    "startTime": 1744988641801,
+    "duration": 566,
+    "cost": 3.89,
+    "status": "success",
+    "callInfo": {
+      "caller": "+12114354367",
+      "callee": "+14442342883",
+      "type": "inbound",
+      "stats": {"llmLatency": 958, "ttsLatency": 870, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_264",
+    "agent": "agent_1",
+    "startTime": 1744521525998,
+    "duration": 134,
+    "cost": 3.68,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+12024779184",
+      "callee": "+14873543451",
+      "type": "inbound",
+      "stats": {"llmLatency": 611, "ttsLatency": 872, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_265",
+    "agent": "agent_2",
+    "startTime": 1745438941339,
+    "duration": 399,
+    "cost": 3.1,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+18073169844",
+      "callee": "+12098462866",
+      "type": "inbound",
+      "stats": {"llmLatency": 296, "ttsLatency": 720, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_266",
+    "agent": "agent_3",
+    "startTime": 1743744044802,
+    "duration": 216,
+    "cost": 8.13,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+19547658797",
+      "callee": "+18677260013",
+      "type": "inbound",
+      "stats": {"llmLatency": 333, "ttsLatency": 458, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_267",
+    "agent": "agent_4",
+    "startTime": 1744535285621,
+    "duration": 0,
+    "cost": 0.84,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+13932427327",
+      "callee": "+11826336367",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_268",
+    "agent": "agent_1",
+    "startTime": 1743359257138,
+    "duration": 322,
+    "cost": 4.65,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+12186986746",
+      "callee": "+18223592933",
+      "type": "outbound",
+      "stats": {"llmLatency": 785, "ttsLatency": 476, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_269",
+    "agent": "agent_1",
+    "startTime": 1744944257443,
+    "duration": 93,
+    "cost": 9.84,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+13836599852",
+      "callee": "+13897257799",
+      "type": "outbound",
+      "stats": {"llmLatency": 251, "ttsLatency": 612, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_270",
+    "agent": "agent_2",
+    "startTime": 1744456757723,
+    "duration": 413,
+    "cost": 3.39,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+19060679806",
+      "callee": "+14340423025",
+      "type": "outbound",
+      "stats": {"llmLatency": 270, "ttsLatency": 372, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_271",
+    "agent": "agent_1",
+    "startTime": 1744412367413,
+    "duration": 0,
+    "cost": 8.45,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+15884275123",
+      "callee": "+11242886181",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_272",
+    "agent": "agent_4",
+    "startTime": 1744197485311,
+    "duration": 569,
+    "cost": 5,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+18919323422",
+      "callee": "+18717168382",
+      "type": "inbound",
+      "stats": {"llmLatency": 879, "ttsLatency": 869, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_273",
+    "agent": "agent_3",
+    "startTime": 1744894157214,
+    "duration": 307,
+    "cost": 2.03,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+14598531204",
+      "callee": "+16195374227",
+      "type": "outbound",
+      "stats": {"llmLatency": 705, "ttsLatency": 432, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_274",
+    "agent": "agent_1",
+    "startTime": 1745097512477,
+    "duration": 411,
+    "cost": 3.08,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+18098185248",
+      "callee": "+17130211407",
+      "type": "inbound",
+      "stats": {"llmLatency": 252, "ttsLatency": 292, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_275",
+    "agent": "agent_4",
+    "startTime": 1744178299269,
+    "duration": 518,
+    "cost": 1.07,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+17020304416",
+      "callee": "+17554475588",
+      "type": "outbound",
+      "stats": {"llmLatency": 509, "ttsLatency": 424, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_276",
+    "agent": "agent_5",
+    "startTime": 1743449964908,
+    "duration": 521,
+    "cost": 9.27,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+17359721980",
+      "callee": "+12954633459",
+      "type": "outbound",
+      "stats": {"llmLatency": 338, "ttsLatency": 363, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_277",
+    "agent": "agent_4",
+    "startTime": 1743914147289,
+    "duration": 320,
+    "cost": 3.06,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+18748553225",
+      "callee": "+14047607172",
+      "type": "inbound",
+      "stats": {"llmLatency": 935, "ttsLatency": 499, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_278",
+    "agent": "agent_3",
+    "startTime": 1743764633265,
+    "duration": 400,
+    "cost": 7.62,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+15678930035",
+      "callee": "+15269616747",
+      "type": "outbound",
+      "stats": {"llmLatency": 718, "ttsLatency": 770, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_279",
+    "agent": "agent_5",
+    "startTime": 1745696279870,
+    "duration": 269,
+    "cost": 6.07,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+18157111297",
+      "callee": "+19458407954",
+      "type": "inbound",
+      "stats": {"llmLatency": 281, "ttsLatency": 188, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_280",
+    "agent": "agent_4",
+    "startTime": 1744264492665,
+    "duration": 50,
+    "cost": 2.68,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+11095754120",
+      "callee": "+15991925498",
+      "type": "outbound",
+      "stats": {"llmLatency": 317, "ttsLatency": 989, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_281",
+    "agent": "agent_4",
+    "startTime": 1744154061428,
+    "duration": 0,
+    "cost": 8.17,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+19606700436",
+      "callee": "+15548004721",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_282",
+    "agent": "agent_1",
+    "startTime": 1744247243486,
+    "duration": 407,
+    "cost": 5.82,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+12298443544",
+      "callee": "+19662095603",
+      "type": "inbound",
+      "stats": {"llmLatency": 616, "ttsLatency": 17, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_283",
+    "agent": "agent_5",
+    "startTime": 1744099329175,
+    "duration": 112,
+    "cost": 9.18,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+16092649499",
+      "callee": "+14412545675",
+      "type": "inbound",
+      "stats": {"llmLatency": 522, "ttsLatency": 278, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_284",
+    "agent": "agent_2",
+    "startTime": 1745082615893,
+    "duration": 348,
+    "cost": 7.52,
+    "status": "success",
+    "callInfo": {
+      "caller": "+19239480706",
+      "callee": "+16901647920",
+      "type": "outbound",
+      "stats": {"llmLatency": 345, "ttsLatency": 863, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_285",
+    "agent": "agent_2",
+    "startTime": 1744547750772,
+    "duration": 0,
+    "cost": 8.57,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+19430603684",
+      "callee": "+16155698876",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_286",
+    "agent": "agent_2",
+    "startTime": 1744370997909,
+    "duration": 271,
+    "cost": 8.68,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+14221904779",
+      "callee": "+18815124896",
+      "type": "outbound",
+      "stats": {"llmLatency": 703, "ttsLatency": 331, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_287",
+    "agent": "agent_3",
+    "startTime": 1745085716007,
+    "duration": 0,
+    "cost": 7.93,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+14566279779",
+      "callee": "+16892183464",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_288",
+    "agent": "agent_4",
+    "startTime": 1743883401245,
+    "duration": 535,
+    "cost": 3.84,
+    "status": "success",
+    "callInfo": {
+      "caller": "+15910207435",
+      "callee": "+15046466999",
+      "type": "outbound",
+      "stats": {"llmLatency": 651, "ttsLatency": 54, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_289",
+    "agent": "agent_5",
+    "startTime": 1743671182584,
+    "duration": 347,
+    "cost": 3.28,
+    "status": "success",
+    "callInfo": {
+      "caller": "+18310764151",
+      "callee": "+11485524431",
+      "type": "outbound",
+      "stats": {"llmLatency": 969, "ttsLatency": 596, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_290",
+    "agent": "agent_5",
+    "startTime": 1744124876825,
+    "duration": 147,
+    "cost": 3.63,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+11087136833",
+      "callee": "+14281217114",
+      "type": "inbound",
+      "stats": {"llmLatency": 364, "ttsLatency": 365, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_291",
+    "agent": "agent_3",
+    "startTime": 1745468242238,
+    "duration": 0,
+    "cost": 8.17,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+12266895127",
+      "callee": "+17186765455",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_292",
+    "agent": "agent_4",
+    "startTime": 1743638091051,
+    "duration": 0,
+    "cost": 5.82,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+13749803751",
+      "callee": "+14534315291",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_293",
+    "agent": "agent_5",
+    "startTime": 1744115691322,
+    "duration": 462,
+    "cost": 9.72,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+13497587731",
+      "callee": "+12005660622",
+      "type": "outbound",
+      "stats": {"llmLatency": 165, "ttsLatency": 847, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_294",
+    "agent": "agent_2",
+    "startTime": 1745229646822,
+    "duration": 84,
+    "cost": 0.66,
+    "status": "success",
+    "callInfo": {
+      "caller": "+18733140996",
+      "callee": "+11125954157",
+      "type": "outbound",
+      "stats": {"llmLatency": 366, "ttsLatency": 73, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_295",
+    "agent": "agent_3",
+    "startTime": 1743738397690,
+    "duration": 532,
+    "cost": 6.42,
+    "status": "success",
+    "callInfo": {
+      "caller": "+14304225188",
+      "callee": "+14153260306",
+      "type": "outbound",
+      "stats": {"llmLatency": 134, "ttsLatency": 530, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_296",
+    "agent": "agent_3",
+    "startTime": 1745512975644,
+    "duration": 0,
+    "cost": 4.59,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+12414918200",
+      "callee": "+17265200307",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_297",
+    "agent": "agent_1",
+    "startTime": 1744483122898,
+    "duration": 465,
+    "cost": 6.69,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+12161302396",
+      "callee": "+11366398871",
+      "type": "outbound",
+      "stats": {"llmLatency": 18, "ttsLatency": 775, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_298",
+    "agent": "agent_1",
+    "startTime": 1743882924225,
+    "duration": 596,
+    "cost": 3.7,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+12521956790",
+      "callee": "+13394271652",
+      "type": "inbound",
+      "stats": {"llmLatency": 396, "ttsLatency": 120, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_299",
+    "agent": "agent_5",
+    "startTime": 1744246266667,
+    "duration": 503,
+    "cost": 5.62,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+18387593843",
+      "callee": "+11721534917",
+      "type": "outbound",
+      "stats": {"llmLatency": 916, "ttsLatency": 804, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_300",
+    "agent": "agent_3",
+    "startTime": 1745414471293,
+    "duration": 57,
+    "cost": 2.41,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+13404686703",
+      "callee": "+14392781005",
+      "type": "inbound",
+      "stats": {"llmLatency": 46, "ttsLatency": 440, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_301",
+    "agent": "agent_3",
+    "startTime": 1743784637836,
+    "duration": 543,
+    "cost": 3.72,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+16295193631",
+      "callee": "+12532150620",
+      "type": "outbound",
+      "stats": {"llmLatency": 814, "ttsLatency": 799, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_302",
+    "agent": "agent_3",
+    "startTime": 1745663084073,
+    "duration": 70,
+    "cost": 8.83,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+11857825074",
+      "callee": "+12526120942",
+      "type": "outbound",
+      "stats": {"llmLatency": 34, "ttsLatency": 978, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_303",
+    "agent": "agent_3",
+    "startTime": 1743477151202,
+    "duration": 0,
+    "cost": 6.07,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+14882963086",
+      "callee": "+11735236279",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_304",
+    "agent": "agent_2",
+    "startTime": 1745257745304,
+    "duration": 188,
+    "cost": 4.81,
+    "status": "success",
+    "callInfo": {
+      "caller": "+11560367324",
+      "callee": "+15247551611",
+      "type": "inbound",
+      "stats": {"llmLatency": 77, "ttsLatency": 808, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_305",
+    "agent": "agent_3",
+    "startTime": 1745254532822,
+    "duration": 426,
+    "cost": 8.18,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+14661099481",
+      "callee": "+17249836719",
+      "type": "inbound",
+      "stats": {"llmLatency": 143, "ttsLatency": 862, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_306",
+    "agent": "agent_1",
+    "startTime": 1745037080185,
+    "duration": 0,
+    "cost": 0.07,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+17924415307",
+      "callee": "+14574367124",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_307",
+    "agent": "agent_4",
+    "startTime": 1744263071717,
+    "duration": 376,
+    "cost": 4.58,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+19380012754",
+      "callee": "+15009601975",
+      "type": "outbound",
+      "stats": {"llmLatency": 4, "ttsLatency": 852, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_308",
+    "agent": "agent_1",
+    "startTime": 1743895691419,
+    "duration": 104,
+    "cost": 9.35,
+    "status": "success",
+    "callInfo": {
+      "caller": "+13479837990",
+      "callee": "+14662217118",
+      "type": "inbound",
+      "stats": {"llmLatency": 348, "ttsLatency": 518, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_309",
+    "agent": "agent_1",
+    "startTime": 1743268987816,
+    "duration": 319,
+    "cost": 7.27,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+13060442930",
+      "callee": "+18842639012",
+      "type": "outbound",
+      "stats": {"llmLatency": 460, "ttsLatency": 643, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_310",
+    "agent": "agent_3",
+    "startTime": 1745332884825,
+    "duration": 492,
+    "cost": 6.86,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+17378555713",
+      "callee": "+11031725278",
+      "type": "outbound",
+      "stats": {"llmLatency": 167, "ttsLatency": 457, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_311",
+    "agent": "agent_5",
+    "startTime": 1743362940950,
+    "duration": 212,
+    "cost": 7.78,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+15732653805",
+      "callee": "+13570095932",
+      "type": "inbound",
+      "stats": {"llmLatency": 954, "ttsLatency": 125, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_312",
+    "agent": "agent_3",
+    "startTime": 1745340627758,
+    "duration": 224,
+    "cost": 3.86,
+    "status": "success",
+    "callInfo": {
+      "caller": "+15934798662",
+      "callee": "+11840383263",
+      "type": "outbound",
+      "stats": {"llmLatency": 54, "ttsLatency": 740, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_313",
+    "agent": "agent_1",
+    "startTime": 1744357375023,
+    "duration": 558,
+    "cost": 5.73,
+    "status": "success",
+    "callInfo": {
+      "caller": "+14772328582",
+      "callee": "+14206763949",
+      "type": "inbound",
+      "stats": {"llmLatency": 329, "ttsLatency": 124, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_314",
+    "agent": "agent_4",
+    "startTime": 1745736976285,
+    "duration": 457,
+    "cost": 4.12,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+12193474149",
+      "callee": "+16286206821",
+      "type": "outbound",
+      "stats": {"llmLatency": 640, "ttsLatency": 63, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_315",
+    "agent": "agent_3",
+    "startTime": 1744243583123,
+    "duration": 0,
+    "cost": 7.74,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+17160491559",
+      "callee": "+18720034027",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_316",
+    "agent": "agent_5",
+    "startTime": 1744021884926,
+    "duration": 31,
+    "cost": 1,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+17443782583",
+      "callee": "+12301455607",
+      "type": "outbound",
+      "stats": {"llmLatency": 955, "ttsLatency": 429, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_317",
+    "agent": "agent_1",
+    "startTime": 1744574687487,
+    "duration": 0,
+    "cost": 3.32,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+13300223926",
+      "callee": "+17636633390",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_318",
+    "agent": "agent_5",
+    "startTime": 1744103212139,
+    "duration": 0,
+    "cost": 1.56,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+17027233223",
+      "callee": "+12775719723",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_319",
+    "agent": "agent_5",
+    "startTime": 1744823965392,
+    "duration": 0,
+    "cost": 6.36,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+12352345683",
+      "callee": "+14005659625",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_320",
+    "agent": "agent_4",
+    "startTime": 1743454248568,
+    "duration": 445,
+    "cost": 4.08,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+12796467297",
+      "callee": "+18211260114",
+      "type": "inbound",
+      "stats": {"llmLatency": 262, "ttsLatency": 591, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_321",
+    "agent": "agent_3",
+    "startTime": 1743840941796,
+    "duration": 510,
+    "cost": 6.62,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+14341076634",
+      "callee": "+18962524855",
+      "type": "outbound",
+      "stats": {"llmLatency": 537, "ttsLatency": 533, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_322",
+    "agent": "agent_2",
+    "startTime": 1745213554779,
+    "duration": 152,
+    "cost": 1.27,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+16759601694",
+      "callee": "+13545730488",
+      "type": "inbound",
+      "stats": {"llmLatency": 337, "ttsLatency": 322, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_323",
+    "agent": "agent_5",
+    "startTime": 1745401591138,
+    "duration": 567,
+    "cost": 1.98,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+12688367910",
+      "callee": "+12859480250",
+      "type": "inbound",
+      "stats": {"llmLatency": 77, "ttsLatency": 296, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_324",
+    "agent": "agent_4",
+    "startTime": 1745485725145,
+    "duration": 0,
+    "cost": 7.35,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+15755650183",
+      "callee": "+17601504864",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_325",
+    "agent": "agent_3",
+    "startTime": 1745814161001,
+    "duration": 75,
+    "cost": 0.35,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+12291188832",
+      "callee": "+13564461533",
+      "type": "inbound",
+      "stats": {"llmLatency": 265, "ttsLatency": 600, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_326",
+    "agent": "agent_2",
+    "startTime": 1745069706768,
+    "duration": 397,
+    "cost": 1.61,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+17757192936",
+      "callee": "+19705394874",
+      "type": "inbound",
+      "stats": {"llmLatency": 796, "ttsLatency": 278, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_327",
+    "agent": "agent_3",
+    "startTime": 1745210797529,
+    "duration": 313,
+    "cost": 1.68,
+    "status": "success",
+    "callInfo": {
+      "caller": "+11347087896",
+      "callee": "+17877101173",
+      "type": "inbound",
+      "stats": {"llmLatency": 37, "ttsLatency": 62, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_328",
+    "agent": "agent_2",
+    "startTime": 1745096172213,
+    "duration": 219,
+    "cost": 9.72,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+17977746819",
+      "callee": "+17876387822",
+      "type": "outbound",
+      "stats": {"llmLatency": 770, "ttsLatency": 139, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_329",
+    "agent": "agent_5",
+    "startTime": 1743843664699,
+    "duration": 212,
+    "cost": 3.92,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+14328662597",
+      "callee": "+11712041931",
+      "type": "inbound",
+      "stats": {"llmLatency": 34, "ttsLatency": 148, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_330",
+    "agent": "agent_3",
+    "startTime": 1743837373513,
+    "duration": 166,
+    "cost": 2.21,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+17074501388",
+      "callee": "+11022580531",
+      "type": "outbound",
+      "stats": {"llmLatency": 613, "ttsLatency": 858, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_331",
+    "agent": "agent_5",
+    "startTime": 1745639140287,
+    "duration": 95,
+    "cost": 4.49,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+13753202938",
+      "callee": "+11337152822",
+      "type": "outbound",
+      "stats": {"llmLatency": 85, "ttsLatency": 793, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_332",
+    "agent": "agent_2",
+    "startTime": 1745611700450,
+    "duration": 363,
+    "cost": 4.18,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+16794197347",
+      "callee": "+13932784859",
+      "type": "inbound",
+      "stats": {"llmLatency": 329, "ttsLatency": 181, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_333",
+    "agent": "agent_3",
+    "startTime": 1744024585250,
+    "duration": 575,
+    "cost": 3.61,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+19983719154",
+      "callee": "+13575017883",
+      "type": "outbound",
+      "stats": {"llmLatency": 76, "ttsLatency": 535, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_334",
+    "agent": "agent_3",
+    "startTime": 1743850523641,
+    "duration": 508,
+    "cost": 8.64,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+14089414870",
+      "callee": "+13139493751",
+      "type": "inbound",
+      "stats": {"llmLatency": 527, "ttsLatency": 902, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_335",
+    "agent": "agent_1",
+    "startTime": 1744094746048,
+    "duration": 415,
+    "cost": 1.89,
+    "status": "success",
+    "callInfo": {
+      "caller": "+13502980432",
+      "callee": "+14265164796",
+      "type": "inbound",
+      "stats": {"llmLatency": 343, "ttsLatency": 533, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_336",
+    "agent": "agent_1",
+    "startTime": 1744068161010,
+    "duration": 192,
+    "cost": 1.76,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+14856956517",
+      "callee": "+15370627658",
+      "type": "outbound",
+      "stats": {"llmLatency": 691, "ttsLatency": 107, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_337",
+    "agent": "agent_5",
+    "startTime": 1745513042013,
+    "duration": 52,
+    "cost": 8.63,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+19417514560",
+      "callee": "+11041569090",
+      "type": "inbound",
+      "stats": {"llmLatency": 969, "ttsLatency": 593, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_338",
+    "agent": "agent_4",
+    "startTime": 1743293377471,
+    "duration": 0,
+    "cost": 5.04,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+17872570951",
+      "callee": "+17311886847",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_339",
+    "agent": "agent_3",
+    "startTime": 1743328303070,
+    "duration": 371,
+    "cost": 1.45,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+13805834122",
+      "callee": "+14159050202",
+      "type": "inbound",
+      "stats": {"llmLatency": 261, "ttsLatency": 219, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_340",
+    "agent": "agent_2",
+    "startTime": 1744782577228,
+    "duration": 114,
+    "cost": 3.71,
+    "status": "success",
+    "callInfo": {
+      "caller": "+19196757333",
+      "callee": "+16704993219",
+      "type": "outbound",
+      "stats": {"llmLatency": 617, "ttsLatency": 634, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_341",
+    "agent": "agent_2",
+    "startTime": 1744524401442,
+    "duration": 0,
+    "cost": 3.1,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+14599146017",
+      "callee": "+13142368408",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_342",
+    "agent": "agent_2",
+    "startTime": 1743427200426,
+    "duration": 0,
+    "cost": 4.53,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+12891289184",
+      "callee": "+11149582783",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_343",
+    "agent": "agent_1",
+    "startTime": 1744640997036,
+    "duration": 139,
+    "cost": 9.09,
+    "status": "success",
+    "callInfo": {
+      "caller": "+17566911755",
+      "callee": "+12323154593",
+      "type": "outbound",
+      "stats": {"llmLatency": 137, "ttsLatency": 293, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_344",
+    "agent": "agent_2",
+    "startTime": 1745121011285,
+    "duration": 186,
+    "cost": 8.24,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+11703131976",
+      "callee": "+15881865343",
+      "type": "outbound",
+      "stats": {"llmLatency": 649, "ttsLatency": 92, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_345",
+    "agent": "agent_3",
+    "startTime": 1745130842685,
+    "duration": 121,
+    "cost": 5.67,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+16376577131",
+      "callee": "+11985710831",
+      "type": "inbound",
+      "stats": {"llmLatency": 860, "ttsLatency": 162, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_346",
+    "agent": "agent_5",
+    "startTime": 1744545875101,
+    "duration": 273,
+    "cost": 8.75,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+17271730211",
+      "callee": "+13935669191",
+      "type": "outbound",
+      "stats": {"llmLatency": 316, "ttsLatency": 23, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_347",
+    "agent": "agent_3",
+    "startTime": 1743939542095,
+    "duration": 0,
+    "cost": 7.83,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+16876968275",
+      "callee": "+14923406604",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_348",
+    "agent": "agent_1",
+    "startTime": 1745435480860,
+    "duration": 513,
+    "cost": 4.15,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+19557312406",
+      "callee": "+15613162507",
+      "type": "outbound",
+      "stats": {"llmLatency": 852, "ttsLatency": 151, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_349",
+    "agent": "agent_5",
+    "startTime": 1743963128185,
+    "duration": 512,
+    "cost": 8.48,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+12665224986",
+      "callee": "+18764967381",
+      "type": "outbound",
+      "stats": {"llmLatency": 352, "ttsLatency": 249, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_350",
+    "agent": "agent_5",
+    "startTime": 1743405845420,
+    "duration": 360,
+    "cost": 5.63,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+13145262123",
+      "callee": "+13620557801",
+      "type": "outbound",
+      "stats": {"llmLatency": 965, "ttsLatency": 187, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_351",
+    "agent": "agent_2",
+    "startTime": 1745574886068,
+    "duration": 0,
+    "cost": 2.23,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+14284163565",
+      "callee": "+11273327171",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_352",
+    "agent": "agent_3",
+    "startTime": 1745266416406,
+    "duration": 523,
+    "cost": 0.97,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+18466393423",
+      "callee": "+12330008649",
+      "type": "outbound",
+      "stats": {"llmLatency": 593, "ttsLatency": 174, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_353",
+    "agent": "agent_5",
+    "startTime": 1744595565298,
+    "duration": 43,
+    "cost": 9.22,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+12775718763",
+      "callee": "+13443483406",
+      "type": "inbound",
+      "stats": {"llmLatency": 877, "ttsLatency": 774, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_354",
+    "agent": "agent_4",
+    "startTime": 1745387444180,
+    "duration": 258,
+    "cost": 9.66,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+12915530311",
+      "callee": "+14540785887",
+      "type": "inbound",
+      "stats": {"llmLatency": 144, "ttsLatency": 846, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_355",
+    "agent": "agent_1",
+    "startTime": 1744100272499,
+    "duration": 412,
+    "cost": 0.07,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+13541531319",
+      "callee": "+19600766855",
+      "type": "outbound",
+      "stats": {"llmLatency": 810, "ttsLatency": 592, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_356",
+    "agent": "agent_5",
+    "startTime": 1743375553748,
+    "duration": 0,
+    "cost": 6.95,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+14680500303",
+      "callee": "+19323571787",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_357",
+    "agent": "agent_3",
+    "startTime": 1744108310722,
+    "duration": 579,
+    "cost": 9.47,
+    "status": "success",
+    "callInfo": {
+      "caller": "+18792951063",
+      "callee": "+14345278378",
+      "type": "outbound",
+      "stats": {"llmLatency": 109, "ttsLatency": 264, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_358",
+    "agent": "agent_4",
+    "startTime": 1743943728454,
+    "duration": 193,
+    "cost": 7.59,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+15081017491",
+      "callee": "+14868343901",
+      "type": "inbound",
+      "stats": {"llmLatency": 837, "ttsLatency": 903, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_359",
+    "agent": "agent_5",
+    "startTime": 1743329938473,
+    "duration": 174,
+    "cost": 3.55,
+    "status": "success",
+    "callInfo": {
+      "caller": "+16956000363",
+      "callee": "+16022666502",
+      "type": "outbound",
+      "stats": {"llmLatency": 484, "ttsLatency": 421, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_360",
+    "agent": "agent_3",
+    "startTime": 1745598182059,
+    "duration": 477,
+    "cost": 6.69,
+    "status": "success",
+    "callInfo": {
+      "caller": "+15128522730",
+      "callee": "+17648333964",
+      "type": "inbound",
+      "stats": {"llmLatency": 65, "ttsLatency": 2, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_361",
+    "agent": "agent_2",
+    "startTime": 1744140267684,
+    "duration": 261,
+    "cost": 1.61,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+15590787158",
+      "callee": "+14497646457",
+      "type": "outbound",
+      "stats": {"llmLatency": 777, "ttsLatency": 110, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_362",
+    "agent": "agent_1",
+    "startTime": 1744606727087,
+    "duration": 157,
+    "cost": 2.56,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+16163900283",
+      "callee": "+17794548349",
+      "type": "inbound",
+      "stats": {"llmLatency": 309, "ttsLatency": 193, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_363",
+    "agent": "agent_4",
+    "startTime": 1745596858149,
+    "duration": 81,
+    "cost": 2.24,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+18095133680",
+      "callee": "+12450314242",
+      "type": "inbound",
+      "stats": {"llmLatency": 223, "ttsLatency": 166, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_364",
+    "agent": "agent_2",
+    "startTime": 1744942570753,
+    "duration": 116,
+    "cost": 4.5,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+16891025723",
+      "callee": "+11120039413",
+      "type": "inbound",
+      "stats": {"llmLatency": 497, "ttsLatency": 835, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_365",
+    "agent": "agent_4",
+    "startTime": 1743673154178,
+    "duration": 448,
+    "cost": 9.4,
+    "status": "success",
+    "callInfo": {
+      "caller": "+11579501303",
+      "callee": "+13922058262",
+      "type": "inbound",
+      "stats": {"llmLatency": 542, "ttsLatency": 845, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_366",
+    "agent": "agent_1",
+    "startTime": 1745642939307,
+    "duration": 513,
+    "cost": 8.24,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+12830014609",
+      "callee": "+11567994199",
+      "type": "inbound",
+      "stats": {"llmLatency": 28, "ttsLatency": 450, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_367",
+    "agent": "agent_4",
+    "startTime": 1745029169176,
+    "duration": 439,
+    "cost": 6.45,
+    "status": "success",
+    "callInfo": {
+      "caller": "+19342753646",
+      "callee": "+17790302375",
+      "type": "inbound",
+      "stats": {"llmLatency": 644, "ttsLatency": 22, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_368",
+    "agent": "agent_3",
+    "startTime": 1744474159950,
+    "duration": 0,
+    "cost": 8.57,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+13130303673",
+      "callee": "+11445150050",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_369",
+    "agent": "agent_4",
+    "startTime": 1743831864367,
+    "duration": 521,
+    "cost": 9.46,
+    "status": "success",
+    "callInfo": {
+      "caller": "+18689406106",
+      "callee": "+15857453313",
+      "type": "outbound",
+      "stats": {"llmLatency": 221, "ttsLatency": 286, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_370",
+    "agent": "agent_5",
+    "startTime": 1743654925057,
+    "duration": 363,
+    "cost": 8.17,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+11848294049",
+      "callee": "+11985050736",
+      "type": "outbound",
+      "stats": {"llmLatency": 536, "ttsLatency": 986, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_371",
+    "agent": "agent_2",
+    "startTime": 1744002533724,
+    "duration": 392,
+    "cost": 3.25,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+18352590579",
+      "callee": "+16822428988",
+      "type": "inbound",
+      "stats": {"llmLatency": 502, "ttsLatency": 167, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_372",
+    "agent": "agent_3",
+    "startTime": 1744085512266,
+    "duration": 195,
+    "cost": 1.13,
+    "status": "success",
+    "callInfo": {
+      "caller": "+15799288249",
+      "callee": "+13507291248",
+      "type": "outbound",
+      "stats": {"llmLatency": 524, "ttsLatency": 457, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_373",
+    "agent": "agent_2",
+    "startTime": 1745674324130,
+    "duration": 136,
+    "cost": 9.42,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+18297792983",
+      "callee": "+11836079055",
+      "type": "inbound",
+      "stats": {"llmLatency": 52, "ttsLatency": 663, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_374",
+    "agent": "agent_5",
+    "startTime": 1743943804819,
+    "duration": 504,
+    "cost": 0.44,
+    "status": "success",
+    "callInfo": {
+      "caller": "+16366607008",
+      "callee": "+18476449787",
+      "type": "outbound",
+      "stats": {"llmLatency": 955, "ttsLatency": 333, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_375",
+    "agent": "agent_4",
+    "startTime": 1743558516823,
+    "duration": 75,
+    "cost": 8,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+13240507021",
+      "callee": "+18351338530",
+      "type": "inbound",
+      "stats": {"llmLatency": 817, "ttsLatency": 843, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_376",
+    "agent": "agent_2",
+    "startTime": 1745133322867,
+    "duration": 0,
+    "cost": 3.59,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+17983101794",
+      "callee": "+11618007296",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_377",
+    "agent": "agent_4",
+    "startTime": 1744681094813,
+    "duration": 0,
+    "cost": 6,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+12644749445",
+      "callee": "+11932923449",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_378",
+    "agent": "agent_2",
+    "startTime": 1744314823397,
+    "duration": 584,
+    "cost": 7.79,
+    "status": "success",
+    "callInfo": {
+      "caller": "+13689738994",
+      "callee": "+15329517659",
+      "type": "inbound",
+      "stats": {"llmLatency": 93, "ttsLatency": 611, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_379",
+    "agent": "agent_2",
+    "startTime": 1743444760683,
+    "duration": 414,
+    "cost": 7.18,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+11731724923",
+      "callee": "+19048911514",
+      "type": "outbound",
+      "stats": {"llmLatency": 635, "ttsLatency": 551, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_380",
+    "agent": "agent_3",
+    "startTime": 1744366578585,
+    "duration": 0,
+    "cost": 2.97,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+14409192848",
+      "callee": "+19532409269",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_381",
+    "agent": "agent_2",
+    "startTime": 1745723705924,
+    "duration": 68,
+    "cost": 9.24,
+    "status": "success",
+    "callInfo": {
+      "caller": "+11453624782",
+      "callee": "+14044075182",
+      "type": "outbound",
+      "stats": {"llmLatency": 22, "ttsLatency": 552, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_382",
+    "agent": "agent_1",
+    "startTime": 1744694284517,
+    "duration": 403,
+    "cost": 1.9,
+    "status": "success",
+    "callInfo": {
+      "caller": "+16729648218",
+      "callee": "+15663311219",
+      "type": "inbound",
+      "stats": {"llmLatency": 59, "ttsLatency": 226, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_383",
+    "agent": "agent_3",
+    "startTime": 1744095155220,
+    "duration": 366,
+    "cost": 3.63,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+14295277868",
+      "callee": "+15228076012",
+      "type": "inbound",
+      "stats": {"llmLatency": 739, "ttsLatency": 531, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_384",
+    "agent": "agent_3",
+    "startTime": 1745597447565,
+    "duration": 250,
+    "cost": 9.67,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+14106566452",
+      "callee": "+15866841592",
+      "type": "outbound",
+      "stats": {"llmLatency": 234, "ttsLatency": 465, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_385",
+    "agent": "agent_5",
+    "startTime": 1743424817016,
+    "duration": 329,
+    "cost": 9.81,
+    "status": "success",
+    "callInfo": {
+      "caller": "+18344531666",
+      "callee": "+15310074193",
+      "type": "outbound",
+      "stats": {"llmLatency": 330, "ttsLatency": 562, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_386",
+    "agent": "agent_4",
+    "startTime": 1744084348427,
+    "duration": 199,
+    "cost": 2.66,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+14252677675",
+      "callee": "+13887215927",
+      "type": "inbound",
+      "stats": {"llmLatency": 48, "ttsLatency": 838, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_387",
+    "agent": "agent_5",
+    "startTime": 1743484759857,
+    "duration": 69,
+    "cost": 7,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+15367235878",
+      "callee": "+16805029241",
+      "type": "inbound",
+      "stats": {"llmLatency": 234, "ttsLatency": 518, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_388",
+    "agent": "agent_3",
+    "startTime": 1743484964254,
+    "duration": 0,
+    "cost": 1.44,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+19405137435",
+      "callee": "+15816746634",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_389",
+    "agent": "agent_5",
+    "startTime": 1745131484305,
+    "duration": 0,
+    "cost": 8.26,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+18905478600",
+      "callee": "+11796655929",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_390",
+    "agent": "agent_2",
+    "startTime": 1744540424531,
+    "duration": 351,
+    "cost": 2.01,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+15450155829",
+      "callee": "+16106775612",
+      "type": "inbound",
+      "stats": {"llmLatency": 3, "ttsLatency": 24, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_391",
+    "agent": "agent_4",
+    "startTime": 1744603983907,
+    "duration": 231,
+    "cost": 3.83,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+18457578471",
+      "callee": "+14439614230",
+      "type": "outbound",
+      "stats": {"llmLatency": 528, "ttsLatency": 722, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_392",
+    "agent": "agent_2",
+    "startTime": 1744935715042,
+    "duration": 195,
+    "cost": 6.83,
+    "status": "success",
+    "callInfo": {
+      "caller": "+17318009146",
+      "callee": "+18368377709",
+      "type": "outbound",
+      "stats": {"llmLatency": 167, "ttsLatency": 190, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_393",
+    "agent": "agent_1",
+    "startTime": 1743352438133,
+    "duration": 344,
+    "cost": 8.5,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+11790504138",
+      "callee": "+14767903542",
+      "type": "outbound",
+      "stats": {"llmLatency": 623, "ttsLatency": 122, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_394",
+    "agent": "agent_3",
+    "startTime": 1745682646670,
+    "duration": 214,
+    "cost": 7.87,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+16346144689",
+      "callee": "+17941867617",
+      "type": "outbound",
+      "stats": {"llmLatency": 912, "ttsLatency": 658, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_395",
+    "agent": "agent_2",
+    "startTime": 1744292696996,
+    "duration": 298,
+    "cost": 5.21,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+15759317553",
+      "callee": "+16279983783",
+      "type": "outbound",
+      "stats": {"llmLatency": 917, "ttsLatency": 637, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_396",
+    "agent": "agent_2",
+    "startTime": 1744481550490,
+    "duration": 53,
+    "cost": 8.37,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+17792552834",
+      "callee": "+13352693558",
+      "type": "outbound",
+      "stats": {"llmLatency": 264, "ttsLatency": 491, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_397",
+    "agent": "agent_1",
+    "startTime": 1743469533301,
+    "duration": 47,
+    "cost": 3.85,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+16452294699",
+      "callee": "+15871408110",
+      "type": "inbound",
+      "stats": {"llmLatency": 3, "ttsLatency": 195, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_398",
+    "agent": "agent_1",
+    "startTime": 1745524904328,
+    "duration": 0,
+    "cost": 3.18,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+15631108369",
+      "callee": "+14595349592",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_399",
+    "agent": "agent_1",
+    "startTime": 1744032368020,
+    "duration": 93,
+    "cost": 5.33,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+19780895094",
+      "callee": "+15566872770",
+      "type": "inbound",
+      "stats": {"llmLatency": 801, "ttsLatency": 56, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_400",
+    "agent": "agent_3",
+    "startTime": 1743308856015,
+    "duration": 0,
+    "cost": 1.72,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+15842582117",
+      "callee": "+12868373762",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_401",
+    "agent": "agent_1",
+    "startTime": 1745284283731,
+    "duration": 216,
+    "cost": 8.09,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+12257183280",
+      "callee": "+12505965705",
+      "type": "outbound",
+      "stats": {"llmLatency": 630, "ttsLatency": 726, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_402",
+    "agent": "agent_1",
+    "startTime": 1744566888864,
+    "duration": 189,
+    "cost": 5.3,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+12329361685",
+      "callee": "+12575406792",
+      "type": "outbound",
+      "stats": {"llmLatency": 971, "ttsLatency": 94, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_403",
+    "agent": "agent_1",
+    "startTime": 1744238870843,
+    "duration": 123,
+    "cost": 4.68,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+17930789048",
+      "callee": "+17793597110",
+      "type": "outbound",
+      "stats": {"llmLatency": 59, "ttsLatency": 633, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_404",
+    "agent": "agent_1",
+    "startTime": 1745128302253,
+    "duration": 97,
+    "cost": 4.56,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+16406362363",
+      "callee": "+15295240797",
+      "type": "outbound",
+      "stats": {"llmLatency": 34, "ttsLatency": 34, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_405",
+    "agent": "agent_2",
+    "startTime": 1744700260897,
+    "duration": 0,
+    "cost": 9.98,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+17922147604",
+      "callee": "+13985618819",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_406",
+    "agent": "agent_4",
+    "startTime": 1744306679390,
+    "duration": 0,
+    "cost": 7.51,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+14346443614",
+      "callee": "+13296879508",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_407",
+    "agent": "agent_4",
+    "startTime": 1743661743610,
+    "duration": 0,
+    "cost": 5.96,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+18570987082",
+      "callee": "+15002780936",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_408",
+    "agent": "agent_5",
+    "startTime": 1745130948009,
+    "duration": 258,
+    "cost": 5.01,
+    "status": "success",
+    "callInfo": {
+      "caller": "+15554144578",
+      "callee": "+11995399002",
+      "type": "outbound",
+      "stats": {"llmLatency": 785, "ttsLatency": 288, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_409",
+    "agent": "agent_4",
+    "startTime": 1743805727651,
+    "duration": 0,
+    "cost": 5.67,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+14558882538",
+      "callee": "+11007467220",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_410",
+    "agent": "agent_3",
+    "startTime": 1744103585754,
+    "duration": 0,
+    "cost": 0.24,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+15249500462",
+      "callee": "+14650690989",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_411",
+    "agent": "agent_4",
+    "startTime": 1743621120905,
+    "duration": 466,
+    "cost": 4.83,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+18640239550",
+      "callee": "+16255918616",
+      "type": "outbound",
+      "stats": {"llmLatency": 893, "ttsLatency": 236, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_412",
+    "agent": "agent_4",
+    "startTime": 1745040208647,
+    "duration": 262,
+    "cost": 4.07,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+12689895951",
+      "callee": "+15427540818",
+      "type": "outbound",
+      "stats": {"llmLatency": 93, "ttsLatency": 877, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_413",
+    "agent": "agent_4",
+    "startTime": 1744776524548,
+    "duration": 292,
+    "cost": 8.99,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+18975072626",
+      "callee": "+15628829212",
+      "type": "outbound",
+      "stats": {"llmLatency": 802, "ttsLatency": 880, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_414",
+    "agent": "agent_3",
+    "startTime": 1744747463383,
+    "duration": 514,
+    "cost": 7.59,
+    "status": "success",
+    "callInfo": {
+      "caller": "+11515167681",
+      "callee": "+16783918101",
+      "type": "outbound",
+      "stats": {"llmLatency": 557, "ttsLatency": 839, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_415",
+    "agent": "agent_3",
+    "startTime": 1743555041835,
+    "duration": 544,
+    "cost": 4.48,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+15842783211",
+      "callee": "+14857130921",
+      "type": "outbound",
+      "stats": {"llmLatency": 307, "ttsLatency": 590, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_416",
+    "agent": "agent_2",
+    "startTime": 1744492165248,
+    "duration": 295,
+    "cost": 6.72,
+    "status": "success",
+    "callInfo": {
+      "caller": "+15317261797",
+      "callee": "+19496326344",
+      "type": "inbound",
+      "stats": {"llmLatency": 815, "ttsLatency": 546, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_417",
+    "agent": "agent_4",
+    "startTime": 1744225598579,
+    "duration": 70,
+    "cost": 8.81,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+19263764840",
+      "callee": "+15598478413",
+      "type": "outbound",
+      "stats": {"llmLatency": 832, "ttsLatency": 514, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_418",
+    "agent": "agent_2",
+    "startTime": 1744757769894,
+    "duration": 0,
+    "cost": 4.54,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+16138645634",
+      "callee": "+12952417299",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_419",
+    "agent": "agent_2",
+    "startTime": 1743855688161,
+    "duration": 554,
+    "cost": 0.47,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+17394357682",
+      "callee": "+18986392530",
+      "type": "inbound",
+      "stats": {"llmLatency": 87, "ttsLatency": 131, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_420",
+    "agent": "agent_2",
+    "startTime": 1743728987176,
+    "duration": 0,
+    "cost": 0.97,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+13924322705",
+      "callee": "+19945899532",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_421",
+    "agent": "agent_1",
+    "startTime": 1743743532649,
+    "duration": 0,
+    "cost": 3.35,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+15891447881",
+      "callee": "+16259743529",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_422",
+    "agent": "agent_5",
+    "startTime": 1745557088672,
+    "duration": 316,
+    "cost": 4.12,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+13446171050",
+      "callee": "+17726164363",
+      "type": "inbound",
+      "stats": {"llmLatency": 102, "ttsLatency": 179, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_423",
+    "agent": "agent_5",
+    "startTime": 1744645846681,
+    "duration": 0,
+    "cost": 0.93,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+15496487862",
+      "callee": "+14264152033",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_424",
+    "agent": "agent_1",
+    "startTime": 1743675200769,
+    "duration": 584,
+    "cost": 0.14,
+    "status": "success",
+    "callInfo": {
+      "caller": "+16740088600",
+      "callee": "+16902317911",
+      "type": "inbound",
+      "stats": {"llmLatency": 299, "ttsLatency": 254, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_425",
+    "agent": "agent_1",
+    "startTime": 1744894402169,
+    "duration": 62,
+    "cost": 0.18,
+    "status": "success",
+    "callInfo": {
+      "caller": "+16603975326",
+      "callee": "+12498884587",
+      "type": "inbound",
+      "stats": {"llmLatency": 544, "ttsLatency": 286, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_426",
+    "agent": "agent_5",
+    "startTime": 1744119394423,
+    "duration": 50,
+    "cost": 7.22,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+16652723384",
+      "callee": "+19700816680",
+      "type": "inbound",
+      "stats": {"llmLatency": 207, "ttsLatency": 71, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_427",
+    "agent": "agent_1",
+    "startTime": 1744004751379,
+    "duration": 479,
+    "cost": 9.2,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+18087124608",
+      "callee": "+14622607881",
+      "type": "inbound",
+      "stats": {"llmLatency": 603, "ttsLatency": 546, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_428",
+    "agent": "agent_1",
+    "startTime": 1745177058718,
+    "duration": 545,
+    "cost": 9.97,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+13221490297",
+      "callee": "+19190602831",
+      "type": "inbound",
+      "stats": {"llmLatency": 488, "ttsLatency": 692, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_429",
+    "agent": "agent_4",
+    "startTime": 1745145188261,
+    "duration": 504,
+    "cost": 0.79,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+13064666844",
+      "callee": "+12436352994",
+      "type": "inbound",
+      "stats": {"llmLatency": 81, "ttsLatency": 299, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_430",
+    "agent": "agent_3",
+    "startTime": 1744367843194,
+    "duration": 522,
+    "cost": 0.7,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+17949575699",
+      "callee": "+16094714690",
+      "type": "outbound",
+      "stats": {"llmLatency": 37, "ttsLatency": 318, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_431",
+    "agent": "agent_3",
+    "startTime": 1744332879604,
+    "duration": 111,
+    "cost": 0.88,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+18615547687",
+      "callee": "+13862595749",
+      "type": "outbound",
+      "stats": {"llmLatency": 382, "ttsLatency": 769, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_432",
+    "agent": "agent_5",
+    "startTime": 1743953147702,
+    "duration": 559,
+    "cost": 3.79,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+18321565183",
+      "callee": "+17547681018",
+      "type": "inbound",
+      "stats": {"llmLatency": 51, "ttsLatency": 540, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_433",
+    "agent": "agent_3",
+    "startTime": 1743445979130,
+    "duration": 59,
+    "cost": 4.36,
+    "status": "success",
+    "callInfo": {
+      "caller": "+12017992190",
+      "callee": "+13182160821",
+      "type": "inbound",
+      "stats": {"llmLatency": 778, "ttsLatency": 933, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_434",
+    "agent": "agent_2",
+    "startTime": 1743640307891,
+    "duration": 0,
+    "cost": 6.88,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+12650864968",
+      "callee": "+12803571712",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_435",
+    "agent": "agent_2",
+    "startTime": 1745098780647,
+    "duration": 0,
+    "cost": 5.77,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+13776296440",
+      "callee": "+12348229507",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_436",
+    "agent": "agent_1",
+    "startTime": 1744443535588,
+    "duration": 336,
+    "cost": 4.4,
+    "status": "success",
+    "callInfo": {
+      "caller": "+12733752851",
+      "callee": "+12615099048",
+      "type": "outbound",
+      "stats": {"llmLatency": 460, "ttsLatency": 393, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_437",
+    "agent": "agent_1",
+    "startTime": 1745671513831,
+    "duration": 311,
+    "cost": 9.93,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+14493198393",
+      "callee": "+11872714126",
+      "type": "inbound",
+      "stats": {"llmLatency": 752, "ttsLatency": 649, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_438",
+    "agent": "agent_2",
+    "startTime": 1744156671105,
+    "duration": 457,
+    "cost": 5.61,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+16234810088",
+      "callee": "+14819806244",
+      "type": "outbound",
+      "stats": {"llmLatency": 365, "ttsLatency": 747, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_439",
+    "agent": "agent_4",
+    "startTime": 1745678192930,
+    "duration": 391,
+    "cost": 1.62,
+    "status": "success",
+    "callInfo": {
+      "caller": "+14719585414",
+      "callee": "+11721647615",
+      "type": "inbound",
+      "stats": {"llmLatency": 898, "ttsLatency": 45, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_440",
+    "agent": "agent_5",
+    "startTime": 1744364926161,
+    "duration": 151,
+    "cost": 8.47,
+    "status": "success",
+    "callInfo": {
+      "caller": "+13145303539",
+      "callee": "+12220352292",
+      "type": "outbound",
+      "stats": {"llmLatency": 296, "ttsLatency": 552, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_441",
+    "agent": "agent_1",
+    "startTime": 1743642079077,
+    "duration": 428,
+    "cost": 6.11,
+    "status": "success",
+    "callInfo": {
+      "caller": "+18554992047",
+      "callee": "+14889270814",
+      "type": "inbound",
+      "stats": {"llmLatency": 625, "ttsLatency": 529, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_442",
+    "agent": "agent_3",
+    "startTime": 1744274456146,
+    "duration": 78,
+    "cost": 4.53,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+15264775765",
+      "callee": "+15084717327",
+      "type": "inbound",
+      "stats": {"llmLatency": 995, "ttsLatency": 256, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_443",
+    "agent": "agent_3",
+    "startTime": 1743701916466,
+    "duration": 129,
+    "cost": 3.23,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+12938578673",
+      "callee": "+12029401213",
+      "type": "outbound",
+      "stats": {"llmLatency": 994, "ttsLatency": 633, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_444",
+    "agent": "agent_4",
+    "startTime": 1743418753033,
+    "duration": 198,
+    "cost": 2.16,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+14563953149",
+      "callee": "+17276543843",
+      "type": "inbound",
+      "stats": {"llmLatency": 975, "ttsLatency": 809, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_445",
+    "agent": "agent_5",
+    "startTime": 1744130955194,
+    "duration": 136,
+    "cost": 1.64,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+19791965589",
+      "callee": "+14305783509",
+      "type": "outbound",
+      "stats": {"llmLatency": 449, "ttsLatency": 535, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_446",
+    "agent": "agent_4",
+    "startTime": 1743404866946,
+    "duration": 437,
+    "cost": 1.82,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+12041867094",
+      "callee": "+19767191542",
+      "type": "inbound",
+      "stats": {"llmLatency": 233, "ttsLatency": 728, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_447",
+    "agent": "agent_4",
+    "startTime": 1744495717076,
+    "duration": 0,
+    "cost": 7.98,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+16581952088",
+      "callee": "+15752349556",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_448",
+    "agent": "agent_4",
+    "startTime": 1743463688002,
+    "duration": 552,
+    "cost": 4.4,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+11731269481",
+      "callee": "+14465155511",
+      "type": "outbound",
+      "stats": {"llmLatency": 710, "ttsLatency": 919, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_449",
+    "agent": "agent_3",
+    "startTime": 1743490386407,
+    "duration": 296,
+    "cost": 6.98,
+    "status": "success",
+    "callInfo": {
+      "caller": "+16269242863",
+      "callee": "+16135222956",
+      "type": "outbound",
+      "stats": {"llmLatency": 585, "ttsLatency": 432, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_450",
+    "agent": "agent_2",
+    "startTime": 1743764715761,
+    "duration": 301,
+    "cost": 7.73,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+15183805959",
+      "callee": "+14348679941",
+      "type": "outbound",
+      "stats": {"llmLatency": 265, "ttsLatency": 569, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_451",
+    "agent": "agent_3",
+    "startTime": 1743973293776,
+    "duration": 407,
+    "cost": 4.77,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+15495110518",
+      "callee": "+11898186087",
+      "type": "inbound",
+      "stats": {"llmLatency": 475, "ttsLatency": 117, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_452",
+    "agent": "agent_3",
+    "startTime": 1744699728067,
+    "duration": 384,
+    "cost": 1.63,
+    "status": "success",
+    "callInfo": {
+      "caller": "+16085280697",
+      "callee": "+14390963271",
+      "type": "outbound",
+      "stats": {"llmLatency": 908, "ttsLatency": 560, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_453",
+    "agent": "agent_5",
+    "startTime": 1745788501155,
+    "duration": 234,
+    "cost": 2.81,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+15831745914",
+      "callee": "+12996794077",
+      "type": "inbound",
+      "stats": {"llmLatency": 988, "ttsLatency": 60, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_454",
+    "agent": "agent_5",
+    "startTime": 1745690756724,
+    "duration": 455,
+    "cost": 8.82,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+19421647814",
+      "callee": "+19313745969",
+      "type": "inbound",
+      "stats": {"llmLatency": 446, "ttsLatency": 367, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_455",
+    "agent": "agent_4",
+    "startTime": 1743951113094,
+    "duration": 236,
+    "cost": 9.26,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+16879180170",
+      "callee": "+13289738582",
+      "type": "outbound",
+      "stats": {"llmLatency": 802, "ttsLatency": 812, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_456",
+    "agent": "agent_4",
+    "startTime": 1745046336713,
+    "duration": 132,
+    "cost": 9.8,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+13050731103",
+      "callee": "+17323426253",
+      "type": "inbound",
+      "stats": {"llmLatency": 306, "ttsLatency": 128, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_457",
+    "agent": "agent_1",
+    "startTime": 1744992375130,
+    "duration": 107,
+    "cost": 9.51,
+    "status": "success",
+    "callInfo": {
+      "caller": "+13586277765",
+      "callee": "+11189423767",
+      "type": "outbound",
+      "stats": {"llmLatency": 612, "ttsLatency": 132, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_458",
+    "agent": "agent_3",
+    "startTime": 1744602338654,
+    "duration": 171,
+    "cost": 4.89,
+    "status": "success",
+    "callInfo": {
+      "caller": "+18901986921",
+      "callee": "+14536299439",
+      "type": "outbound",
+      "stats": {"llmLatency": 897, "ttsLatency": 986, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_459",
+    "agent": "agent_5",
+    "startTime": 1743885368383,
+    "duration": 0,
+    "cost": 6.55,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+12617608759",
+      "callee": "+17065267599",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_460",
+    "agent": "agent_3",
+    "startTime": 1745140413384,
+    "duration": 443,
+    "cost": 0.31,
+    "status": "success",
+    "callInfo": {
+      "caller": "+16747853878",
+      "callee": "+12054114284",
+      "type": "inbound",
+      "stats": {"llmLatency": 951, "ttsLatency": 463, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_461",
+    "agent": "agent_5",
+    "startTime": 1743921156653,
+    "duration": 389,
+    "cost": 0.39,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+16011576810",
+      "callee": "+13440048195",
+      "type": "inbound",
+      "stats": {"llmLatency": 92, "ttsLatency": 670, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_462",
+    "agent": "agent_2",
+    "startTime": 1743618588155,
+    "duration": 0,
+    "cost": 9.29,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+15336479289",
+      "callee": "+14648327765",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_463",
+    "agent": "agent_4",
+    "startTime": 1744443148340,
+    "duration": 261,
+    "cost": 9.53,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+19993740143",
+      "callee": "+11012013129",
+      "type": "outbound",
+      "stats": {"llmLatency": 541, "ttsLatency": 276, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_464",
+    "agent": "agent_2",
+    "startTime": 1744570052507,
+    "duration": 410,
+    "cost": 5.49,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+16759915673",
+      "callee": "+11397088321",
+      "type": "outbound",
+      "stats": {"llmLatency": 521, "ttsLatency": 650, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_465",
+    "agent": "agent_4",
+    "startTime": 1743879834733,
+    "duration": 449,
+    "cost": 6.26,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+13819604956",
+      "callee": "+16637661436",
+      "type": "inbound",
+      "stats": {"llmLatency": 768, "ttsLatency": 728, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_466",
+    "agent": "agent_3",
+    "startTime": 1743239721161,
+    "duration": 0,
+    "cost": 9.61,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+16549157193",
+      "callee": "+19674387995",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_467",
+    "agent": "agent_1",
+    "startTime": 1745329882586,
+    "duration": 337,
+    "cost": 4.45,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+17476947114",
+      "callee": "+15728415107",
+      "type": "inbound",
+      "stats": {"llmLatency": 451, "ttsLatency": 827, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_468",
+    "agent": "agent_4",
+    "startTime": 1743298480864,
+    "duration": 334,
+    "cost": 0.82,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+11066073119",
+      "callee": "+13304451347",
+      "type": "inbound",
+      "stats": {"llmLatency": 846, "ttsLatency": 184, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_469",
+    "agent": "agent_1",
+    "startTime": 1745261678744,
+    "duration": 287,
+    "cost": 5.35,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+15600746426",
+      "callee": "+14652691705",
+      "type": "inbound",
+      "stats": {"llmLatency": 692, "ttsLatency": 368, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_470",
+    "agent": "agent_4",
+    "startTime": 1744567229284,
+    "duration": 0,
+    "cost": 9.54,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+17719768621",
+      "callee": "+11478946267",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_471",
+    "agent": "agent_2",
+    "startTime": 1745069215559,
+    "duration": 117,
+    "cost": 9.16,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+14779288988",
+      "callee": "+11909919664",
+      "type": "outbound",
+      "stats": {"llmLatency": 724, "ttsLatency": 468, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_472",
+    "agent": "agent_1",
+    "startTime": 1744854153932,
+    "duration": 508,
+    "cost": 9.18,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+11928818033",
+      "callee": "+15062193227",
+      "type": "outbound",
+      "stats": {"llmLatency": 410, "ttsLatency": 386, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_473",
+    "agent": "agent_2",
+    "startTime": 1743740727055,
+    "duration": 48,
+    "cost": 10,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+18683023761",
+      "callee": "+19865240292",
+      "type": "inbound",
+      "stats": {"llmLatency": 583, "ttsLatency": 482, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_474",
+    "agent": "agent_4",
+    "startTime": 1744136794331,
+    "duration": 356,
+    "cost": 0.19,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+16140938537",
+      "callee": "+15868215919",
+      "type": "inbound",
+      "stats": {"llmLatency": 345, "ttsLatency": 965, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_475",
+    "agent": "agent_5",
+    "startTime": 1744660459024,
+    "duration": 309,
+    "cost": 6.89,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+12660561916",
+      "callee": "+13430280766",
+      "type": "outbound",
+      "stats": {"llmLatency": 492, "ttsLatency": 182, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_476",
+    "agent": "agent_5",
+    "startTime": 1743323338304,
+    "duration": 145,
+    "cost": 1.17,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+14072333610",
+      "callee": "+12015882731",
+      "type": "inbound",
+      "stats": {"llmLatency": 540, "ttsLatency": 533, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_477",
+    "agent": "agent_4",
+    "startTime": 1743613880793,
+    "duration": 98,
+    "cost": 2.02,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+15679976929",
+      "callee": "+12723914238",
+      "type": "inbound",
+      "stats": {"llmLatency": 221, "ttsLatency": 357, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_478",
+    "agent": "agent_3",
+    "startTime": 1743752223545,
+    "duration": 172,
+    "cost": 6,
+    "status": "transfer",
+    "callInfo": {
+      "caller": "+13884157408",
+      "callee": "+18339483137",
+      "type": "outbound",
+      "stats": {"llmLatency": 242, "ttsLatency": 996, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_479",
+    "agent": "agent_2",
+    "startTime": 1745307592428,
+    "duration": 592,
+    "cost": 9.34,
+    "status": "success",
+    "callInfo": {
+      "caller": "+16990268294",
+      "callee": "+11964122570",
+      "type": "outbound",
+      "stats": {"llmLatency": 62, "ttsLatency": 760, "interruptions": 2}
+    }
+  },
+  {
+    "id": "conv_480",
+    "agent": "agent_1",
+    "startTime": 1744908644362,
+    "duration": 578,
+    "cost": 0.47,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+12331089003",
+      "callee": "+18842167577",
+      "type": "outbound",
+      "stats": {"llmLatency": 387, "ttsLatency": 616, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_481",
+    "agent": "agent_3",
+    "startTime": 1743969604040,
+    "duration": 0,
+    "cost": 9.05,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+13088382953",
+      "callee": "+18446781102",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_482",
+    "agent": "agent_4",
+    "startTime": 1744527867261,
+    "duration": 146,
+    "cost": 1.68,
+    "status": "success",
+    "callInfo": {
+      "caller": "+15021217563",
+      "callee": "+19184890294",
+      "type": "outbound",
+      "stats": {"llmLatency": 190, "ttsLatency": 477, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_483",
+    "agent": "agent_4",
+    "startTime": 1745417458616,
+    "duration": 0,
+    "cost": 8.4,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+16882412943",
+      "callee": "+16281251203",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_484",
+    "agent": "agent_2",
+    "startTime": 1744522480152,
+    "duration": 0,
+    "cost": 3.37,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+18814794632",
+      "callee": "+17134882730",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_485",
+    "agent": "agent_2",
+    "startTime": 1745246223352,
+    "duration": 99,
+    "cost": 6.12,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+14373955934",
+      "callee": "+19118747510",
+      "type": "inbound",
+      "stats": {"llmLatency": 390, "ttsLatency": 72, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_486",
+    "agent": "agent_1",
+    "startTime": 1744770294255,
+    "duration": 283,
+    "cost": 2.3,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+15210557714",
+      "callee": "+12668773228",
+      "type": "inbound",
+      "stats": {"llmLatency": 610, "ttsLatency": 782, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_487",
+    "agent": "agent_5",
+    "startTime": 1745017830014,
+    "duration": 528,
+    "cost": 1.29,
+    "status": "success",
+    "callInfo": {
+      "caller": "+11488098686",
+      "callee": "+13823136017",
+      "type": "outbound",
+      "stats": {"llmLatency": 533, "ttsLatency": 677, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_488",
+    "agent": "agent_3",
+    "startTime": 1744081457011,
+    "duration": 0,
+    "cost": 6.87,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+12476971964",
+      "callee": "+18760466830",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_489",
+    "agent": "agent_5",
+    "startTime": 1745735613482,
+    "duration": 327,
+    "cost": 2.01,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+18219392461",
+      "callee": "+16868743434",
+      "type": "inbound",
+      "stats": {"llmLatency": 610, "ttsLatency": 452, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_490",
+    "agent": "agent_3",
+    "startTime": 1743457028767,
+    "duration": 0,
+    "cost": 1.34,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+11116052765",
+      "callee": "+17386848834",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_491",
+    "agent": "agent_2",
+    "startTime": 1745346263388,
+    "duration": 314,
+    "cost": 9.29,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+12220446612",
+      "callee": "+11014176879",
+      "type": "inbound",
+      "stats": {"llmLatency": 623, "ttsLatency": 223, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_492",
+    "agent": "agent_4",
+    "startTime": 1744827282355,
+    "duration": 0,
+    "cost": 4.27,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+16575925171",
+      "callee": "+18853147693",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_493",
+    "agent": "agent_2",
+    "startTime": 1745780125991,
+    "duration": 320,
+    "cost": 2.81,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+14236723099",
+      "callee": "+12338862390",
+      "type": "outbound",
+      "stats": {"llmLatency": 926, "ttsLatency": 860, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_494",
+    "agent": "agent_3",
+    "startTime": 1744454931421,
+    "duration": 229,
+    "cost": 3.76,
+    "status": "success",
+    "callInfo": {
+      "caller": "+11031521561",
+      "callee": "+13816210236",
+      "type": "inbound",
+      "stats": {"llmLatency": 875, "ttsLatency": 641, "interruptions": 1}
+    }
+  },
+  {
+    "id": "conv_495",
+    "agent": "agent_1",
+    "startTime": 1743982768209,
+    "duration": 191,
+    "cost": 7.57,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+17122106838",
+      "callee": "+14360054933",
+      "type": "inbound",
+      "stats": {"llmLatency": 638, "ttsLatency": 346, "interruptions": 3}
+    }
+  },
+  {
+    "id": "conv_496",
+    "agent": "agent_4",
+    "startTime": 1743271931521,
+    "duration": 0,
+    "cost": 5.98,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+13298910424",
+      "callee": "+18386389537",
+      "type"  : "inbound"
+    }
+  },
+  {
+    "id": "conv_497",
+    "agent": "agent_3",
+    "startTime": 1744895524378,
+    "duration": 527,
+    "cost": 9.92,
+    "status": "busy",
+    "callInfo": {
+      "caller": "+12473355699",
+      "callee": "+12276374155",
+      "type": "outbound",
+      "stats": {"llmLatency": 525, "ttsLatency": 415, "interruptions": 4}
+    }
+  },
+  {
+    "id": "conv_498",
+    "agent": "agent_2",
+    "startTime": 1743741459851,
+    "duration": 0,
+    "cost": 5.43,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+18529230765",
+      "callee": "+11918064652",
+      "type"  : "outbound"
+    }
+  },
+  {
+    "id": "conv_499",
+    "agent": "agent_1",
+    "startTime": 1743780811087,
+    "duration": 335,
+    "cost": 3.47,
+    "status": "dropped",
+    "callInfo": {
+      "caller": "+16126237066",
+      "callee": "+14945848883",
+      "type": "outbound",
+      "stats": {"llmLatency": 739, "ttsLatency": 499, "interruptions": 0}
+    }
+  },
+  {
+    "id": "conv_500",
+    "agent": "agent_1",
+    "startTime": 1743668145384,
+    "duration": 0,
+    "cost": 0.5,
+    "status": "no_answer",
+    "callInfo": {
+      "caller": "+19488453240",
+      "callee": "+12142170285",
+      "type"  : "outbound"
+    }
+  }
+]
