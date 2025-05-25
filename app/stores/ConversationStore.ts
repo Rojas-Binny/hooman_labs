@@ -108,7 +108,10 @@ const ConversationStore = types
       // Date range filter
       if (self.filters.dateRange) {
         const startTime = new Date(self.filters.dateRange.start).getTime();
-        const endTime = new Date(self.filters.dateRange.end).getTime();
+        // Set end time to end of day (23:59:59.999) to include all conversations on the end date
+        const endDate = new Date(self.filters.dateRange.end);
+        endDate.setHours(23, 59, 59, 999);
+        const endTime = endDate.getTime();
         filtered = filtered.filter(conv => 
           conv.startTime >= startTime && conv.startTime <= endTime
         );

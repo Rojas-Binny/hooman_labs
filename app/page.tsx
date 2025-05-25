@@ -115,7 +115,7 @@ const Dashboard = observer(() => {
     value: number | string;
     icon: React.ReactNode;
     color?: 'primary' | 'secondary' | 'success' | 'error' | 'warning' | 'info';
-    format?: 'number' | 'currency' | 'percentage' | 'time' | 'ms' | 'custom';
+    format?: 'number' | 'currency' | 'percentage' | 'time' | 'ms' | 'custom' | 'integer';
     showProgress?: boolean;
     progressValue?: number;
     children?: React.ReactNode;
@@ -133,6 +133,8 @@ const Dashboard = observer(() => {
           return formatTime(val);
         case 'ms':
           return `${val.toFixed(0)}ms`;
+        case 'integer':
+          return Math.round(val).toString();
         default:
           return typeof val === 'number' ? val.toFixed(2) : val;
       }
@@ -472,6 +474,7 @@ const Dashboard = observer(() => {
               value={metrics.totalCalls}
               icon={<Phone />}
               color="primary"
+              format="integer"
             />
           </Grid>
           <Grid item xs={12} sm={6}>
