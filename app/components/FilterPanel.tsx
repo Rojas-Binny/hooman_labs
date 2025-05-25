@@ -20,8 +20,8 @@ import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import dayjs, { Dayjs } from 'dayjs';
-import axios from 'axios';
 import { FilterList, Clear, CalendarToday, Person, Phone, Schedule } from '@mui/icons-material';
+import { useStore } from '../stores/StoreProvider';
 
 interface Filters {
   dateRange?: { start: string; end: string };
@@ -42,32 +42,41 @@ interface FilterPanelProps {
 }
 
 const timeRangeOptions = [
-  '0-6',   // Early Morning
-  '6-12',  // Morning
-  '12-18', // Afternoon
-  '18-24', // Evening
+  'short',   // < 2 minutes
+  'medium',  // 2-5 minutes
+  'long',    // > 5 minutes
 ];
 
 const timeRangeLabels: { [key: string]: string } = {
-  '0-6': 'Early Morning (12AM-6AM)',
-  '6-12': 'Morning (6AM-12PM)',
-  '12-18': 'Afternoon (12PM-6PM)',
-  '18-24': 'Evening (6PM-12AM)',
+  'short': 'Short Calls (< 2 min)',
+  'medium': 'Medium Calls (2-5 min)',
+  'long': 'Long Calls (> 5 min)',
 };
 
 export default function FilterPanel({ onFiltersChange, selectedAgents, selectedCallTypes, selectedTimeRanges, onAgentsChange, onCallTypesChange, onTimeRangesChange, currentFilters }: FilterPanelProps) {
+  const store = useStore();
   const [startDate, setStartDate] = useState<Dayjs | null>(null);
   const [endDate, setEndDate] = useState<Dayjs | null>(null);
   
-  const [availableAgents, setAvailableAgents] = useState<string[]>([]);
-  const [availableCallTypes, setAvailableCallTypes] = useState<string[]>([]);
-  const [dateRange, setDateRange] = useState<{min: string, max: string} | null>(null);
-  
   const hasInitialized = useRef(false);
 
-  useEffect(() => {
-    fetchMetadata();
-  }, []);
+  // Get available options from store
+  const availableAgents = store.availableAgents;
+  const availableCallTypes = store.availableCallTypes;
+
+  // Calculate date range from conversations
+  const dateRange = React.useMemo(() => {
+    if (store.conversations.length === 0) return null;
+    
+    const timestamps = store.conversations.map(conv => conv.startTime);
+    const minTime = Math.min(...timestamps);
+    const maxTime = Math.max(...timestamps);
+    
+    return {
+      min: dayjs(minTime).format('YYYY-MM-DD'),
+      max: dayjs(maxTime).format('YYYY-MM-DD'),
+    };
+  }, [store.conversations]);
 
   // Sync date pickers with current filters from parent (always keep them in sync)
   useEffect(() => {
@@ -81,7 +90,7 @@ export default function FilterPanel({ onFiltersChange, selectedAgents, selectedC
 
   // Initialize dates and send initial filters when date range is available
   useEffect(() => {
-    if (dateRange && !hasInitialized.current && !currentFilters?.dateRange) {
+    if (dateRange && !hasInitialized.current && !currentFilters?.dateRange && store.conversations.length > 0) {
       hasInitialized.current = true;
       
       const start = dayjs(dateRange.min);
@@ -96,23 +105,7 @@ export default function FilterPanel({ onFiltersChange, selectedAgents, selectedC
       };
       onFiltersChange(initialFilters);
     }
-  }, [dateRange, currentFilters?.dateRange]);
-
-  const fetchMetadata = async () => {
-    try {
-      const [agentsRes, callTypesRes, dateRangeRes] = await Promise.all([
-        axios.get('http://localhost:3001/api/agents'),
-        axios.get('http://localhost:3001/api/call-types'),
-        axios.get('http://localhost:3001/api/date-range'),
-      ]);
-      
-      setAvailableAgents(agentsRes.data);
-      setAvailableCallTypes(callTypesRes.data);
-      setDateRange(dateRangeRes.data);
-    } catch (error) {
-      console.error('Error fetching metadata:', error);
-    }
-  };
+  }, [dateRange, currentFilters?.dateRange, store.conversations.length]);
 
   const handleAgentChange = (event: SelectChangeEvent<typeof selectedAgents>) => {
     const value = event.target.value;
@@ -233,229 +226,129 @@ export default function FilterPanel({ onFiltersChange, selectedAgents, selectedC
   };
 
   const clearAllFilters = () => {
-    // Reset all filter states
-    onAgentsChange([]);
-    onCallTypesChange([]);
-    onTimeRangesChange([]);
-    
-    // Reset dates to full range and send filters
+    // Reset to full date range
     if (dateRange) {
       const start = dayjs(dateRange.min);
       const end = dayjs(dateRange.max);
+      setStartDate(start);
+      setEndDate(end);
       
-      // Send filters with only date range (no other filters)
-      onFiltersChange({
+      onAgentsChange([]);
+      onCallTypesChange([]);
+      onTimeRangesChange([]);
+      
+      const filters: Filters = {
         dateRange: {
           start: start.format('YYYY-MM-DD'),
           end: end.format('YYYY-MM-DD'),
         }
-      });
+      };
+      
+      onFiltersChange(filters);
     }
   };
 
   const hasActiveFilters = selectedAgents.length > 0 || selectedCallTypes.length > 0 || selectedTimeRanges.length > 0;
 
   return (
-    <LocalizationProvider dateAdapter={AdapterDayjs}>
-      <Box>
-        {/* Header */}
-        <Box display="flex" alignItems="center" justifyContent="space-between" mb={3}>
-          <Box display="flex" alignItems="center">
-            <FilterList sx={{ mr: 1, color: 'primary.main' }} />
-            <Typography variant="h6" fontWeight="bold">
-              Filters & Search
-            </Typography>
-          </Box>
-          {hasActiveFilters && (
-            <Button 
-              startIcon={<Clear />} 
-              onClick={clearAllFilters}
-              size="small"
-              sx={{ 
-                color: 'error.main',
-                '&:hover': { backgroundColor: 'error.light', color: 'white' }
-              }}
-            >
-              Clear All
-            </Button>
-          )}
-        </Box>
-
-        {/* Active Filters Summary */}
+    <Box>
+      <Box display="flex" alignItems="center" mb={3}>
+        <FilterList sx={{ mr: 1, color: '#90caf9' }} />
+        <Typography variant="h6" fontWeight="bold">
+          Filters
+        </Typography>
         {hasActiveFilters && (
-          <Paper elevation={0} sx={{ p: 2, mb: 3, bgcolor: 'background.paper', borderRadius: 2, border: '1px solid rgba(144, 202, 249, 0.3)' }}>
-            <Typography variant="subtitle2" fontWeight="bold" color="text.secondary" mb={1}>
-              Active Filters
-            </Typography>
-            <Box display="flex" flexWrap="wrap" gap={1}>
-              {selectedAgents.map((agent) => (
-                <Chip 
-                  key={agent} 
-                  label={`Agent: ${agent}`} 
-                  size="small" 
-                  color="primary"
-                  onDelete={() => {
-                    const newAgents = selectedAgents.filter(a => a !== agent);
-                    onAgentsChange(newAgents);
-                    
-                    if (startDate && endDate) {
-                      const filters: Filters = {
-                        dateRange: {
-                          start: startDate.format('YYYY-MM-DD'),
-                          end: endDate.format('YYYY-MM-DD'),
-                        }
-                      };
-                      
-                      if (newAgents.length > 0) {
-                        filters.agents = newAgents;
-                      }
-                      
-                      if (selectedCallTypes.length > 0) {
-                        filters.callTypes = selectedCallTypes;
-                      }
-                      
-                      if (selectedTimeRanges.length > 0) {
-                        filters.timeRanges = selectedTimeRanges;
-                      }
-                      
-                      onFiltersChange(filters);
-                    }
-                  }}
-                />
-              ))}
-              {selectedCallTypes.map((type) => (
-                <Chip 
-                  key={type} 
-                  label={`Type: ${type.charAt(0).toUpperCase() + type.slice(1)}`} 
-                  size="small" 
-                  color="secondary"
-                  onDelete={() => {
-                    const newCallTypes = selectedCallTypes.filter(t => t !== type);
-                    onCallTypesChange(newCallTypes);
-                    
-                    if (startDate && endDate) {
-                      const filters: Filters = {
-                        dateRange: {
-                          start: startDate.format('YYYY-MM-DD'),
-                          end: endDate.format('YYYY-MM-DD'),
-                        }
-                      };
-                      
-                      if (selectedAgents.length > 0) {
-                        filters.agents = selectedAgents;
-                      }
-                      
-                      if (newCallTypes.length > 0) {
-                        filters.callTypes = newCallTypes;
-                      }
-                      
-                      if (selectedTimeRanges.length > 0) {
-                        filters.timeRanges = selectedTimeRanges;
-                      }
-                      
-                      onFiltersChange(filters);
-                    }
-                  }}
-                />
-              ))}
-              {selectedTimeRanges.map((range) => (
-                <Chip 
-                  key={range} 
-                  label={`Time: ${timeRangeLabels[range]}`} 
-                  size="small" 
-                  color="success"
-                  onDelete={() => {
-                    const newTimeRanges = selectedTimeRanges.filter(r => r !== range);
-                    onTimeRangesChange(newTimeRanges);
-                    
-                    if (startDate && endDate) {
-                      const filters: Filters = {
-                        dateRange: {
-                          start: startDate.format('YYYY-MM-DD'),
-                          end: endDate.format('YYYY-MM-DD'),
-                        }
-                      };
-                      
-                      if (selectedAgents.length > 0) {
-                        filters.agents = selectedAgents;
-                      }
-                      
-                      if (selectedCallTypes.length > 0) {
-                        filters.callTypes = selectedCallTypes;
-                      }
-                      
-                      if (newTimeRanges.length > 0) {
-                        filters.timeRanges = newTimeRanges;
-                      }
-                      
-                      onFiltersChange(filters);
-                    }
-                  }}
-                />
-              ))}
-            </Box>
-          </Paper>
+          <Button
+            variant="outlined"
+            size="small"
+            startIcon={<Clear />}
+            onClick={clearAllFilters}
+            sx={{ 
+              ml: 'auto',
+              borderColor: '#ce93d8',
+              color: '#ce93d8',
+              '&:hover': {
+                borderColor: '#ab47bc',
+                backgroundColor: 'rgba(206, 147, 216, 0.1)',
+              }
+            }}
+          >
+            Clear All
+          </Button>
         )}
+      </Box>
 
-        <Grid container spacing={3}>
-          {/* Date Range */}
-          <Grid item xs={12} md={6}>
+      <Grid container spacing={3}>
+        {/* Date Range */}
+        <Grid item xs={12} md={6}>
+          <Box>
             <Box display="flex" alignItems="center" mb={2}>
-              <CalendarToday sx={{ mr: 1, color: 'primary.main', fontSize: 20 }} />
-              <Typography variant="subtitle1" fontWeight="bold">
+              <CalendarToday sx={{ mr: 1, color: '#90caf9', fontSize: 20 }} />
+              <Typography variant="subtitle1" fontWeight="medium">
                 Date Range
               </Typography>
             </Box>
-            <Box display="flex" gap={2}>
-              <DatePicker
-                label="Start Date"
-                value={startDate}
-                onChange={(newValue) => handleDateChange(newValue, endDate)}
-                format="DD/MM/YYYY"
-                slotProps={{ 
-                  textField: { 
-                    id: 'start-date-picker',
-                    name: 'startDate',
-                    size: 'small', 
-                    fullWidth: true 
-                  } 
-                }}
-                minDate={dateRange ? dayjs(dateRange.min) : undefined}
-                maxDate={dateRange ? dayjs(dateRange.max) : undefined}
-              />
-              <DatePicker
-                label="End Date"
-                value={endDate}
-                onChange={(newValue) => handleDateChange(startDate, newValue)}
-                format="DD/MM/YYYY"
-                slotProps={{ 
-                  textField: { 
-                    id: 'end-date-picker',
-                    name: 'endDate',
-                    size: 'small', 
-                    fullWidth: true 
-                  } 
-                }}
-                minDate={startDate || (dateRange ? dayjs(dateRange.min) : undefined)}
-                maxDate={dateRange ? dayjs(dateRange.max) : undefined}
-              />
-            </Box>
-          </Grid>
+            <Grid container spacing={2}>
+              <Grid item xs={6}>
+                <DatePicker
+                  label="Start Date"
+                  value={startDate}
+                  onChange={(newValue) => handleDateChange(newValue, endDate)}
+                  minDate={dateRange ? dayjs(dateRange.min) : undefined}
+                  maxDate={dateRange ? dayjs(dateRange.max) : undefined}
+                  slotProps={{
+                    textField: {
+                      fullWidth: true,
+                      size: 'small',
+                    },
+                  }}
+                />
+              </Grid>
+              <Grid item xs={6}>
+                <DatePicker
+                  label="End Date"
+                  value={endDate}
+                  onChange={(newValue) => handleDateChange(startDate, newValue)}
+                  minDate={startDate || (dateRange ? dayjs(dateRange.min) : undefined)}
+                  maxDate={dateRange ? dayjs(dateRange.max) : undefined}
+                  slotProps={{
+                    textField: {
+                      fullWidth: true,
+                      size: 'small',
+                    },
+                  }}
+                />
+              </Grid>
+            </Grid>
+          </Box>
+        </Grid>
 
-          {/* Agent Selection */}
-          <Grid item xs={12} md={6}>
+        {/* Agents */}
+        <Grid item xs={12} md={6}>
+          <Box>
             <Box display="flex" alignItems="center" mb={2}>
-              <Person sx={{ mr: 1, color: 'primary.main', fontSize: 20 }} />
-              <Typography variant="subtitle1" fontWeight="bold">
+              <Person sx={{ mr: 1, color: '#66bb6a', fontSize: 20 }} />
+              <Typography variant="subtitle1" fontWeight="medium">
                 Agents
               </Typography>
+              {selectedAgents.length > 0 && (
+                <Chip 
+                  label={selectedAgents.length} 
+                  size="small" 
+                  sx={{ 
+                    ml: 1, 
+                    backgroundColor: '#66bb6a', 
+                    color: 'white',
+                    minWidth: '24px',
+                    height: '20px',
+                    fontSize: '0.75rem'
+                  }} 
+                />
+              )}
             </Box>
             <FormControl fullWidth size="small">
-              <InputLabel id="agents-select-label" htmlFor="agents-select">Select Agents</InputLabel>
+              <InputLabel>Select Agents</InputLabel>
               <Select
-                labelId="agents-select-label"
-                id="agents-select"
-                name="agents"
                 multiple
                 value={selectedAgents}
                 onChange={handleAgentChange}
@@ -463,7 +356,16 @@ export default function FilterPanel({ onFiltersChange, selectedAgents, selectedC
                 renderValue={(selected) => (
                   <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.5 }}>
                     {selected.map((value) => (
-                      <Chip key={value} label={value} size="small" color="primary" variant="outlined" />
+                      <Chip 
+                        key={value} 
+                        label={value} 
+                        size="small"
+                        sx={{ 
+                          backgroundColor: '#66bb6a20',
+                          color: '#66bb6a',
+                          border: '1px solid #66bb6a40'
+                        }}
+                      />
                     ))}
                   </Box>
                 )}
@@ -475,22 +377,35 @@ export default function FilterPanel({ onFiltersChange, selectedAgents, selectedC
                 ))}
               </Select>
             </FormControl>
-          </Grid>
+          </Box>
+        </Grid>
 
-          {/* Call Type */}
-          <Grid item xs={12} md={6}>
+        {/* Call Types */}
+        <Grid item xs={12} md={6}>
+          <Box>
             <Box display="flex" alignItems="center" mb={2}>
-              <Phone sx={{ mr: 1, color: 'primary.main', fontSize: 20 }} />
-              <Typography variant="subtitle1" fontWeight="bold">
+              <Phone sx={{ mr: 1, color: '#29b6f6', fontSize: 20 }} />
+              <Typography variant="subtitle1" fontWeight="medium">
                 Call Types
               </Typography>
+              {selectedCallTypes.length > 0 && (
+                <Chip 
+                  label={selectedCallTypes.length} 
+                  size="small" 
+                  sx={{ 
+                    ml: 1, 
+                    backgroundColor: '#29b6f6', 
+                    color: 'white',
+                    minWidth: '24px',
+                    height: '20px',
+                    fontSize: '0.75rem'
+                  }} 
+                />
+              )}
             </Box>
             <FormControl fullWidth size="small">
-              <InputLabel id="call-types-select-label" htmlFor="call-types-select">Select Call Types</InputLabel>
+              <InputLabel>Select Call Types</InputLabel>
               <Select
-                labelId="call-types-select-label"
-                id="call-types-select"
-                name="callTypes"
                 multiple
                 value={selectedCallTypes}
                 onChange={handleCallTypeChange}
@@ -501,9 +416,12 @@ export default function FilterPanel({ onFiltersChange, selectedAgents, selectedC
                       <Chip 
                         key={value} 
                         label={value.charAt(0).toUpperCase() + value.slice(1)} 
-                        size="small" 
-                        color="secondary"
-                        variant="outlined"
+                        size="small"
+                        sx={{ 
+                          backgroundColor: '#29b6f620',
+                          color: '#29b6f6',
+                          border: '1px solid #29b6f640'
+                        }}
                       />
                     ))}
                   </Box>
@@ -516,35 +434,51 @@ export default function FilterPanel({ onFiltersChange, selectedAgents, selectedC
                 ))}
               </Select>
             </FormControl>
-          </Grid>
+          </Box>
+        </Grid>
 
-          {/* Time Ranges */}
-          <Grid item xs={12} md={6}>
+        {/* Time Ranges */}
+        <Grid item xs={12} md={6}>
+          <Box>
             <Box display="flex" alignItems="center" mb={2}>
-              <Schedule sx={{ mr: 1, color: 'primary.main', fontSize: 20 }} />
-              <Typography variant="subtitle1" fontWeight="bold">
-                Time Ranges
+              <Schedule sx={{ mr: 1, color: '#ffa726', fontSize: 20 }} />
+              <Typography variant="subtitle1" fontWeight="medium">
+                Call Duration
               </Typography>
+              {selectedTimeRanges.length > 0 && (
+                <Chip 
+                  label={selectedTimeRanges.length} 
+                  size="small" 
+                  sx={{ 
+                    ml: 1, 
+                    backgroundColor: '#ffa726', 
+                    color: 'white',
+                    minWidth: '24px',
+                    height: '20px',
+                    fontSize: '0.75rem'
+                  }} 
+                />
+              )}
             </Box>
             <FormControl fullWidth size="small">
-              <InputLabel id="time-ranges-select-label" htmlFor="time-ranges-select">Select Time Ranges</InputLabel>
+              <InputLabel>Select Duration Ranges</InputLabel>
               <Select
-                labelId="time-ranges-select-label"
-                id="time-ranges-select"
-                name="timeRanges"
                 multiple
                 value={selectedTimeRanges}
                 onChange={handleTimeRangeChange}
-                input={<OutlinedInput label="Select Time Ranges" />}
+                input={<OutlinedInput label="Select Duration Ranges" />}
                 renderValue={(selected) => (
                   <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.5 }}>
                     {selected.map((value) => (
                       <Chip 
                         key={value} 
                         label={timeRangeLabels[value]} 
-                        size="small" 
-                        color="success"
-                        variant="outlined"
+                        size="small"
+                        sx={{ 
+                          backgroundColor: '#ffa72620',
+                          color: '#ffa726',
+                          border: '1px solid #ffa72640'
+                        }}
                       />
                     ))}
                   </Box>
@@ -557,9 +491,9 @@ export default function FilterPanel({ onFiltersChange, selectedAgents, selectedC
                 ))}
               </Select>
             </FormControl>
-          </Grid>
+          </Box>
         </Grid>
-      </Box>
-    </LocalizationProvider>
+      </Grid>
+    </Box>
   );
 } 

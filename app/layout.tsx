@@ -6,6 +6,7 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { CssBaseline } from '@mui/material';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import { StoreProvider } from './stores/StoreProvider';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -94,7 +95,9 @@ export default function RootLayout({
         <ThemeProvider theme={darkTheme}>
           <CssBaseline />
           <LocalizationProvider dateAdapter={AdapterDayjs}>
-            {children}
+            <StoreProvider>
+              {children}
+            </StoreProvider>
           </LocalizationProvider>
         </ThemeProvider>
       </body>

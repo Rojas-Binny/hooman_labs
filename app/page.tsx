@@ -1,7 +1,7 @@
 'use client';
 
-import React, { useState, useEffect, useCallback, useMemo, useRef } from 'react';
-import axios from 'axios';
+import React, { useEffect, useCallback } from 'react';
+import { observer } from 'mobx-react-lite';
 import {
   Container,
   Typography,
@@ -42,24 +42,7 @@ import {
 } from '@mui/icons-material';
 import FilterPanel from './components/FilterPanel';
 import AgentChartsModal from './components/AgentChartsModal';
-
-interface Metrics {
-  avgCostPerCall: number;
-  avgCostPerMin: number;
-  successRate: number;
-  failureRate: number;
-  transferRate: number;
-  abandonmentRate: number;
-  avgInterruptions: number;
-  avgLLMLatency: number;
-  avgTTSLatency: number;
-  avgTotalLatency: number;
-  firstCallResolutionRate: number;
-  avgCostPerSuccessfulCall: number;
-  avgHandleTime: number;
-  totalCalls: number;
-  totalCost: number;
-}
+import { useStore } from './stores/StoreProvider';
 
 interface Filters {
   dateRange?: { start: string; end: string };
@@ -68,104 +51,53 @@ interface Filters {
   timeRanges?: string[];
 }
 
-export default function Dashboard() {
-  const [metrics, setMetrics] = useState<Metrics | null>(null);
-  const [filters, setFilters] = useState<Filters>({});
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-  const [agentModalOpen, setAgentModalOpen] = useState(false);
-  
-  // Filter state managed at Dashboard level to prevent resets
-  const [selectedAgents, setSelectedAgents] = useState<string[]>([]);
-  const [selectedCallTypes, setSelectedCallTypes] = useState<string[]>([]);
-  const [selectedTimeRanges, setSelectedTimeRanges] = useState<string[]>([]);
-  
-  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
-  const lastFiltersRef = useRef<string>('');
+const Dashboard = observer(() => {
+  const store = useStore();
+  const [agentModalOpen, setAgentModalOpen] = React.useState(false);
 
-  const fetchMetrics = useCallback(async (filtersToUse: Filters) => {
-    try {
-      setLoading(true);
-      setError(null);
-      
-      // Properly serialize filters for query parameters
-      const queryParams = {};
-      
-      if (filtersToUse.dateRange) {
-        if (filtersToUse.dateRange.start) queryParams['dateRange[start]'] = filtersToUse.dateRange.start;
-        if (filtersToUse.dateRange.end) queryParams['dateRange[end]'] = filtersToUse.dateRange.end;
-      }
-      
-      if (filtersToUse.agents && filtersToUse.agents.length > 0) {
-        queryParams['agents'] = filtersToUse.agents;
-      }
-      
-      if (filtersToUse.callTypes && filtersToUse.callTypes.length > 0) {
-        queryParams['callTypes'] = filtersToUse.callTypes;
-      }
-      
-      if (filtersToUse.timeRanges && filtersToUse.timeRanges.length > 0) {
-        queryParams['timeRanges'] = filtersToUse.timeRanges;
-      }
-      
-      const response = await axios.get('http://localhost:3001/api/metrics', { params: queryParams });
-      setMetrics(response.data);
-    } catch (err) {
-      setError(`Failed to fetch metrics: ${err.message}`);
-    } finally {
-      setLoading(false);
-    }
-  }, []);
-
-  // Debounced effect for filters
+  // Load conversations on mount
   useEffect(() => {
-    const filtersString = JSON.stringify(filters);
-    
-    // Don't make API call if filters haven't actually changed
-    if (lastFiltersRef.current === filtersString) {
-      return;
-    }
-    
-    // Clear any existing timeout
-    if (timeoutRef.current) {
-      clearTimeout(timeoutRef.current);
-    }
-    
-    // Set new timeout for debounced API call
-    timeoutRef.current = setTimeout(() => {
-      lastFiltersRef.current = filtersString;
-      fetchMetrics(filters);
-    }, 300); // 300ms debounce
-    
-    // Cleanup timeout on unmount
-    return () => {
-      if (timeoutRef.current) {
-        clearTimeout(timeoutRef.current);
-      }
-    };
-  }, [filters]); // Removed fetchMetrics dependency
+    store.loadConversations();
+  }, [store]);
 
   const handleFiltersChange = useCallback((newFilters: Filters) => {
-    setFilters(newFilters);
-  }, []);
+    // Update store filters based on new filters
+    if (newFilters.dateRange) {
+      store.setDateRange(newFilters.dateRange.start, newFilters.dateRange.end);
+    } else {
+      store.setDateRange();
+    }
+    
+    if (newFilters.agents) {
+      store.setAgents(newFilters.agents);
+    }
+    
+    if (newFilters.callTypes) {
+      store.setCallTypes(newFilters.callTypes);
+    }
+    
+    if (newFilters.timeRanges) {
+      store.setTimeRanges(newFilters.timeRanges);
+    }
+  }, [store]);
 
   const handleAgentsChange = useCallback((agents: string[]) => {
-    setSelectedAgents(agents);
-  }, []);
+    store.setAgents(agents);
+  }, [store]);
 
   const handleCallTypesChange = useCallback((callTypes: string[]) => {
-    setSelectedCallTypes(callTypes);
-  }, []);
+    store.setCallTypes(callTypes);
+  }, [store]);
 
   const handleTimeRangesChange = useCallback((timeRanges: string[]) => {
-    setSelectedTimeRanges(timeRanges);
-  }, []);
+    store.setTimeRanges(timeRanges);
+  }, [store]);
 
   const formatCurrency = (value: number) => `$${value.toFixed(2)}`;
   const formatPercentage = (value: number) => `${value.toFixed(1)}%`;
   const formatTime = (seconds: number) => {
     const minutes = Math.floor(seconds / 60);
-    const remainingSeconds = seconds % 60;
+    const remainingSeconds = Math.round(seconds % 60);
     return `${minutes}m ${remainingSeconds}s`;
   };
 
@@ -200,69 +132,33 @@ export default function Dashboard() {
         case 'time':
           return formatTime(val);
         case 'ms':
-          return `${val}ms`;
+          return `${val.toFixed(0)}ms`;
         default:
-          return val.toFixed(2);
+          return typeof val === 'number' ? val.toFixed(2) : val;
       }
     };
 
     const getProgressColor = () => {
-      switch (color) {
-        case 'success': return '#4caf50';
-        case 'error': return '#f44336';
-        case 'warning': return '#ff9800';
-        case 'secondary': return '#9c27b0';
-        case 'info': return '#2196f3';
-        default: return '#1976d2';
+      if (format === 'percentage') {
+        if (typeof value === 'number') {
+          if (value >= 80) return 'success';
+          if (value >= 60) return 'warning';
+          return 'error';
+        }
       }
+      return color;
     };
 
     const getCardColors = () => {
-      // Dark theme colors
-      switch (color) {
-        case 'success': 
-          return {
-            background: 'linear-gradient(135deg, #1e3a2e 0%, #2d2d2d 100%)',
-            border: '#66bb6a20',
-            iconBg: '#66bb6a',
-            shadow: '#66bb6a30'
-          };
-        case 'error': 
-          return {
-            background: 'linear-gradient(135deg, #3a1e1e 0%, #2d2d2d 100%)',
-            border: '#f4433620',
-            iconBg: '#f44336',
-            shadow: '#f4433630'
-          };
-        case 'warning': 
-          return {
-            background: 'linear-gradient(135deg, #3a2e1e 0%, #2d2d2d 100%)',
-            border: '#ffa72620',
-            iconBg: '#ffa726',
-            shadow: '#ffa72630'
-          };
-        case 'secondary': 
-          return {
-            background: 'linear-gradient(135deg, #2e1e3a 0%, #2d2d2d 100%)',
-            border: '#ce93d820',
-            iconBg: '#ce93d8',
-            shadow: '#ce93d830'
-          };
-        case 'info':
-          return {
-            background: 'linear-gradient(135deg, #1e2e3a 0%, #2d2d2d 100%)',
-            border: '#29b6f620',
-            iconBg: '#29b6f6',
-            shadow: '#29b6f630'
-          };
-        default: 
-          return {
-            background: 'linear-gradient(135deg, #1e2e3a 0%, #2d2d2d 100%)',
-            border: '#90caf920',
-            iconBg: '#90caf9',
-            shadow: '#90caf930'
-          };
-      }
+      const colors = {
+        primary: { bg: 'rgba(144, 202, 249, 0.1)', border: '#90caf9' },
+        secondary: { bg: 'rgba(206, 147, 216, 0.1)', border: '#ce93d8' },
+        success: { bg: 'rgba(102, 187, 106, 0.1)', border: '#66bb6a' },
+        error: { bg: 'rgba(244, 67, 54, 0.1)', border: '#f44336' },
+        warning: { bg: 'rgba(255, 167, 38, 0.1)', border: '#ffa726' },
+        info: { bg: 'rgba(41, 182, 246, 0.1)', border: '#29b6f6' },
+      };
+      return colors[color] || colors.primary;
     };
 
     const cardColors = getCardColors();
@@ -270,247 +166,253 @@ export default function Dashboard() {
     return (
       <Card 
         sx={{ 
-          height: '100%', 
+          height: '100%',
+          background: `linear-gradient(135deg, ${cardColors.bg} 0%, rgba(30, 30, 30, 0.8) 100%)`,
+          border: `1px solid ${cardColors.border}`,
+          borderRadius: 2,
           transition: 'all 0.3s ease',
-          '&:hover': { 
-            transform: 'translateY(-4px)',
-            boxShadow: '0 8px 25px rgba(0,0,0,0.15)'
-          },
-          background: cardColors.background,
-          border: `1px solid ${cardColors.border}`
+          '&:hover': {
+            transform: 'translateY(-2px)',
+            boxShadow: `0 8px 25px rgba(0,0,0,0.3), 0 0 20px ${cardColors.border}40`,
+          }
         }}
       >
         <CardContent sx={{ p: 3 }}>
           <Box display="flex" alignItems="center" justifyContent="space-between" mb={2}>
-            <Box sx={{ 
-              backgroundColor: cardColors.iconBg,
+            <Box sx={{
+              background: `linear-gradient(135deg, ${cardColors.border} 0%, ${cardColors.border}80 100%)`,
               borderRadius: '50%',
-              width: 48,
-              height: 48,
+              p: 1.5,
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              color: 'white',
-              boxShadow: `0 4px 12px ${cardColors.shadow}`
+              boxShadow: `0 4px 12px ${cardColors.border}40`
             }}>
-              {icon}
+              {React.cloneElement(icon as React.ReactElement, { 
+                sx: { fontSize: 28, color: 'white' } 
+              })}
             </Box>
+            <Typography variant="h4" fontWeight="bold" color="text.primary">
+              {formatValue(value)}
+            </Typography>
           </Box>
-          <Typography variant="body2" color="text.secondary" fontWeight="medium" mb={1}>
+          
+          <Typography variant="h6" color="text.secondary" gutterBottom>
             {title}
           </Typography>
-          <Typography variant="h4" component="div" color="#90caf9" fontWeight="bold" mb={showProgress ? 2 : 0}>
-            {formatValue(value)}
-          </Typography>
-          {children}
-          {showProgress && (
-            <Box>
+          
+          {showProgress && typeof progressValue === 'number' && (
+            <Box mt={2}>
               <LinearProgress 
                 variant="determinate" 
-                value={progressValue || (typeof value === 'number' ? value : 0)} 
-                sx={{
-                  height: 6,
-                  borderRadius: 3,
-                  backgroundColor: '#333',
+                value={Math.min(progressValue, 100)} 
+                color={getProgressColor()}
+                sx={{ 
+                  height: 8, 
+                  borderRadius: 4,
+                  backgroundColor: 'rgba(255,255,255,0.1)',
                   '& .MuiLinearProgress-bar': {
-                    backgroundColor: getProgressColor(),
-                    borderRadius: 3,
+                    borderRadius: 4,
                   }
                 }}
               />
-              <Typography variant="caption" color="text.secondary" sx={{ mt: 0.5, display: 'block' }}>
-                {format === 'percentage' ? `${(progressValue || (typeof value === 'number' ? value : 0)).toFixed(1)}% of total` : 'Performance indicator'}
-              </Typography>
             </Box>
           )}
+          
+          {children}
         </CardContent>
       </Card>
     );
   };
 
-  const CallOutcomesCard = ({ metrics }: { metrics: Metrics }) => (
-    <MetricCard
-      title="Call Outcomes Distribution"
-      value=""
-      icon={<Analytics />}
-      color="primary"
-      format="custom"
-    >
-      <Box sx={{ mt: 1 }}>
-        <Box display="flex" justifyContent="space-between" alignItems="center" mb={1}>
-          <Box display="flex" alignItems="center">
-            <CheckCircle sx={{ fontSize: 16, color: '#4caf50', mr: 0.5 }} />
-            <Typography variant="body2" color="text.secondary">Success</Typography>
+  const CallOutcomesCard = ({ metrics }: { metrics: any }) => (
+    <Card sx={{ 
+      height: '100%',
+      background: 'linear-gradient(135deg, rgba(102, 187, 106, 0.1) 0%, rgba(30, 30, 30, 0.8) 100%)',
+      border: '1px solid #66bb6a',
+      borderRadius: 2,
+      transition: 'all 0.3s ease',
+      '&:hover': {
+        transform: 'translateY(-2px)',
+        boxShadow: '0 8px 25px rgba(0,0,0,0.3), 0 0 20px #66bb6a40',
+      }
+    }}>
+      <CardContent sx={{ p: 3 }}>
+        <Box display="flex" alignItems="center" mb={2}>
+          <Box sx={{
+            background: 'linear-gradient(135deg, #66bb6a 0%, #66bb6a80 100%)',
+            borderRadius: '50%',
+            p: 1.5,
+            mr: 2,
+            boxShadow: '0 4px 12px #66bb6a40'
+          }}>
+            <Assessment sx={{ fontSize: 28, color: 'white' }} />
           </Box>
-          <Typography variant="body2" fontWeight="bold" color="#4caf50">
-            {formatPercentage(metrics.successRate)}
-          </Typography>
+          <Typography variant="h6" fontWeight="bold">Call Outcomes</Typography>
         </Box>
-        <LinearProgress 
-          variant="determinate" 
-          value={metrics.successRate} 
-          sx={{
-            height: 4,
-            borderRadius: 2,
-            backgroundColor: '#e8f5e8',
-            mb: 1.5,
-            '& .MuiLinearProgress-bar': {
-              backgroundColor: '#4caf50',
-              borderRadius: 2,
-            }
-          }}
-        />
         
-        <Box display="flex" justifyContent="space-between" alignItems="center" mb={1}>
-          <Box display="flex" alignItems="center">
-            <Transform sx={{ fontSize: 16, color: '#ff9800', mr: 0.5 }} />
-            <Typography variant="body2" color="text.secondary">Transfer</Typography>
-          </Box>
-          <Typography variant="body2" fontWeight="bold" color="#ff9800">
-            {formatPercentage(metrics.transferRate)}
-          </Typography>
-        </Box>
-        <LinearProgress 
-          variant="determinate" 
-          value={metrics.transferRate} 
-          sx={{
-            height: 4,
-            borderRadius: 2,
-            backgroundColor: '#fff3e0',
-            mb: 1.5,
-            '& .MuiLinearProgress-bar': {
-              backgroundColor: '#ff9800',
-              borderRadius: 2,
-            }
-          }}
-        />
-        
-        <Box display="flex" justifyContent="space-between" alignItems="center" mb={1}>
-          <Box display="flex" alignItems="center">
-            <CallEnd sx={{ fontSize: 16, color: '#f44336', mr: 0.5 }} />
-            <Typography variant="body2" color="text.secondary">Abandoned</Typography>
-          </Box>
-          <Typography variant="body2" fontWeight="bold" color="#f44336">
-            {formatPercentage(metrics.abandonmentRate)}
-          </Typography>
-        </Box>
-        <LinearProgress 
-          variant="determinate" 
-          value={metrics.abandonmentRate} 
-          sx={{
-            height: 4,
-            borderRadius: 2,
-            backgroundColor: '#ffebee',
-            mb: 1.5,
-            '& .MuiLinearProgress-bar': {
-              backgroundColor: '#f44336',
-              borderRadius: 2,
-            }
-          }}
-        />
-        
-        <Box display="flex" justifyContent="space-between" alignItems="center" mb={1}>
-          <Box display="flex" alignItems="center">
-            <Error sx={{ fontSize: 16, color: '#9e9e9e', mr: 0.5 }} />
-            <Typography variant="body2" color="text.secondary">Failed</Typography>
-          </Box>
-          <Typography variant="body2" fontWeight="bold" color="#9e9e9e">
-            {formatPercentage(metrics.failureRate)}
-          </Typography>
-        </Box>
-        <LinearProgress 
-          variant="determinate" 
-          value={metrics.failureRate} 
-          sx={{
-            height: 4,
-            borderRadius: 2,
-            backgroundColor: '#f5f5f5',
-            '& .MuiLinearProgress-bar': {
-              backgroundColor: '#9e9e9e',
-              borderRadius: 2,
-            }
-          }}
-        />
-      </Box>
-    </MetricCard>
+        <Grid container spacing={2}>
+          <Grid item xs={6}>
+            <Box textAlign="center">
+              <Box display="flex" alignItems="center" justifyContent="center" mb={1}>
+                <CheckCircle sx={{ color: '#66bb6a', mr: 1, fontSize: 20 }} />
+                <Typography variant="body2" color="text.secondary">Success</Typography>
+              </Box>
+              <Typography variant="h6" fontWeight="bold" color="#66bb6a">
+                {formatPercentage(metrics.successRate)}
+              </Typography>
+            </Box>
+          </Grid>
+          
+          <Grid item xs={6}>
+            <Box textAlign="center">
+              <Box display="flex" alignItems="center" justifyContent="center" mb={1}>
+                <Error sx={{ color: '#f44336', mr: 1, fontSize: 20 }} />
+                <Typography variant="body2" color="text.secondary">Failure</Typography>
+              </Box>
+              <Typography variant="h6" fontWeight="bold" color="#f44336">
+                {formatPercentage(metrics.failureRate)}
+              </Typography>
+            </Box>
+          </Grid>
+          
+          <Grid item xs={6}>
+            <Box textAlign="center">
+              <Box display="flex" alignItems="center" justifyContent="center" mb={1}>
+                <SwapHoriz sx={{ color: '#ffa726', mr: 1, fontSize: 20 }} />
+                <Typography variant="body2" color="text.secondary">Transfer</Typography>
+              </Box>
+              <Typography variant="h6" fontWeight="bold" color="#ffa726">
+                {formatPercentage(metrics.transferRate)}
+              </Typography>
+            </Box>
+          </Grid>
+          
+          <Grid item xs={6}>
+            <Box textAlign="center">
+              <Box display="flex" alignItems="center" justifyContent="center" mb={1}>
+                <Cancel sx={{ color: '#ce93d8', mr: 1, fontSize: 20 }} />
+                <Typography variant="body2" color="text.secondary">Abandon</Typography>
+              </Box>
+              <Typography variant="h6" fontWeight="bold" color="#ce93d8">
+                {formatPercentage(metrics.abandonmentRate)}
+              </Typography>
+            </Box>
+          </Grid>
+        </Grid>
+      </CardContent>
+    </Card>
   );
 
-  const LatencyMetricsCard = ({ metrics }: { metrics: Metrics }) => (
-    <MetricCard
-      title="Latency Metrics"
-      value={`${metrics.avgTotalLatency}ms`}
-      icon={<Speed />}
-      color="info"
-      format="custom"
-    >
-      <Box sx={{ mt: 2 }}>
-        <Box display="flex" justifyContent="space-between" alignItems="center" mb={1}>
-          <Box display="flex" alignItems="center">
-            <Box sx={{ 
-              width: 8, 
-              height: 8, 
-              borderRadius: '50%', 
-              backgroundColor: '#2196f3', 
-              mr: 1 
-            }} />
-            <Typography variant="body2" color="text.secondary">LLM Latency</Typography>
+  const LatencyMetricsCard = ({ metrics }: { metrics: any }) => (
+    <Card sx={{ 
+      height: '100%',
+      background: 'linear-gradient(135deg, rgba(41, 182, 246, 0.1) 0%, rgba(30, 30, 30, 0.8) 100%)',
+      border: '1px solid #29b6f6',
+      borderRadius: 2,
+      transition: 'all 0.3s ease',
+      '&:hover': {
+        transform: 'translateY(-2px)',
+        boxShadow: '0 8px 25px rgba(0,0,0,0.3), 0 0 20px #29b6f640',
+      }
+    }}>
+      <CardContent sx={{ p: 3 }}>
+        <Box display="flex" alignItems="center" mb={2}>
+          <Box sx={{
+            background: 'linear-gradient(135deg, #29b6f6 0%, #29b6f680 100%)',
+            borderRadius: '50%',
+            p: 1.5,
+            mr: 2,
+            boxShadow: '0 4px 12px #29b6f640'
+          }}>
+            <Speed sx={{ fontSize: 28, color: 'white' }} />
           </Box>
-          <Typography variant="body2" fontWeight="bold" color="#2196f3">
-            {metrics.avgLLMLatency}ms
-          </Typography>
+          <Typography variant="h6" fontWeight="bold">Latency Metrics</Typography>
         </Box>
         
-        <Box display="flex" justifyContent="space-between" alignItems="center" mb={1}>
-          <Box display="flex" alignItems="center">
-            <Box sx={{ 
-              width: 8, 
-              height: 8, 
-              borderRadius: '50%', 
-              backgroundColor: '#7b1fa2', 
-              mr: 1 
-            }} />
-            <Typography variant="body2" color="text.secondary">TTS Latency</Typography>
-          </Box>
-          <Typography variant="body2" fontWeight="bold" color="#7b1fa2">
-            {metrics.avgTTSLatency}ms
-          </Typography>
-        </Box>
-        
-        <Box sx={{ mt: 1.5, pt: 1.5, borderTop: '1px solid #e0e0e0' }}>
-          <Typography variant="caption" color="text.secondary">
-            Combined Total: {metrics.avgTotalLatency}ms
-          </Typography>
-        </Box>
-      </Box>
-    </MetricCard>
+        <Grid container spacing={2}>
+          <Grid item xs={12}>
+            <Box display="flex" alignItems="center" justifyContent="space-between" mb={1}>
+              <Box display="flex" alignItems="center">
+                <SignalCellularAlt sx={{ color: '#29b6f6', mr: 1, fontSize: 16 }} />
+                <Typography variant="body2" color="text.secondary">LLM</Typography>
+              </Box>
+              <Typography variant="body1" fontWeight="bold">
+                {metrics.avgLLMLatency.toFixed(0)}ms
+              </Typography>
+            </Box>
+          </Grid>
+          
+          <Grid item xs={12}>
+            <Box display="flex" alignItems="center" justifyContent="space-between" mb={1}>
+              <Box display="flex" alignItems="center">
+                <Mic sx={{ color: '#90caf9', mr: 1, fontSize: 16 }} />
+                <Typography variant="body2" color="text.secondary">TTS</Typography>
+              </Box>
+              <Typography variant="body1" fontWeight="bold">
+                {metrics.avgTTSLatency.toFixed(0)}ms
+              </Typography>
+            </Box>
+          </Grid>
+          
+          <Grid item xs={12}>
+            <Divider sx={{ my: 1, backgroundColor: 'rgba(255,255,255,0.1)' }} />
+            <Box display="flex" alignItems="center" justifyContent="space-between">
+              <Box display="flex" alignItems="center">
+                <Timer sx={{ color: '#ce93d8', mr: 1, fontSize: 16 }} />
+                <Typography variant="body2" color="text.secondary">Total</Typography>
+              </Box>
+              <Typography variant="h6" fontWeight="bold" color="#ce93d8">
+                {metrics.avgTotalLatency.toFixed(0)}ms
+              </Typography>
+            </Box>
+          </Grid>
+        </Grid>
+      </CardContent>
+    </Card>
   );
 
-  if (loading) {
+  // Loading state
+  if (store.loading) {
     return (
       <Container maxWidth="lg" sx={{ py: 4 }}>
-        <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" minHeight="400px">
-          <CircularProgress size={60} sx={{ mb: 2, color: '#90caf9' }} />
-          <Typography variant="h6" color="text.secondary">Loading analytics...</Typography>
+        <Box display="flex" justifyContent="center" alignItems="center" minHeight="50vh">
+          <CircularProgress size={60} />
         </Box>
       </Container>
     );
   }
 
-  if (error) {
+  // Error state
+  if (store.error) {
     return (
       <Container maxWidth="lg" sx={{ py: 4 }}>
-        <Alert severity="error" sx={{ borderRadius: 2 }}>{error}</Alert>
+        <Alert severity="error" sx={{ borderRadius: 2 }}>{store.error}</Alert>
       </Container>
     );
   }
 
-  if (!metrics) {
+  // No data state
+  if (store.conversations.length === 0) {
     return (
       <Container maxWidth="lg" sx={{ py: 4 }}>
         <Alert severity="warning" sx={{ borderRadius: 2 }}>No data available</Alert>
       </Container>
     );
   }
+
+  const metrics = store.metrics;
+
+  // Convert store filters to the format expected by FilterPanel
+  const currentFilters: Filters = {
+    dateRange: store.filters.dateRange ? {
+      start: store.filters.dateRange.start,
+      end: store.filters.dateRange.end
+    } : undefined,
+    agents: store.filters.agents.slice(),
+    callTypes: store.filters.callTypes.slice(),
+    timeRanges: store.filters.timeRanges.slice(),
+  };
 
   return (
     <Container maxWidth="lg" sx={{ py: 4 }}>
@@ -548,13 +450,13 @@ export default function Dashboard() {
       <Paper sx={{ p: 3, mb: 4, borderRadius: 2, boxShadow: '0 2px 12px rgba(0,0,0,0.3)' }}>
         <FilterPanel 
           onFiltersChange={handleFiltersChange}
-          selectedAgents={selectedAgents}
-          selectedCallTypes={selectedCallTypes}
-          selectedTimeRanges={selectedTimeRanges}
+          selectedAgents={store.filters.agents.slice()}
+          selectedCallTypes={store.filters.callTypes.slice()}
+          selectedTimeRanges={store.filters.timeRanges.slice()}
           onAgentsChange={handleAgentsChange}
           onCallTypesChange={handleCallTypesChange}
           onTimeRangesChange={handleTimeRangesChange}
-          currentFilters={filters}
+          currentFilters={currentFilters}
         />
       </Paper>
 
@@ -687,8 +589,10 @@ export default function Dashboard() {
       <AgentChartsModal
         open={agentModalOpen}
         onClose={() => setAgentModalOpen(false)}
-        filters={filters}
+        filters={currentFilters}
       />
     </Container>
   );
-} 
+});
+
+export default Dashboard; 
